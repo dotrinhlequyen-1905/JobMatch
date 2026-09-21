@@ -1,0 +1,1 @@
+﻿\"\"\"Abstract storage interface.\"\"\"
