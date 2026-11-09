@@ -1,0 +1,2 @@
+# One source of Python dependency versions: backend/pyproject.toml.
+-e ./backend[ai,dev,research]

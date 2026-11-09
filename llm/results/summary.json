@@ -1,0 +1,792 @@
+{
+ "qwen/qwen3.8-27b:free": {
+  "gen_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"qwen/qwen3.8-27b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"ModelRun\",\"is_byok\":false,\"p"
+  },
+  "review_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"qwen/qwen3.8-27b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"ModelRun\",\"is_byok\":false,\"p"
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ },
+ "nvidia/nemotron-3-ultra-550b-a55b:free": {
+  "gen_info": {
+   "sec": 127.4,
+   "usage": {
+    "prompt_tokens": 757,
+    "completion_tokens": 6000,
+    "total_tokens": 6757,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5520,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "review_info": {
+   "sec": 91.7,
+   "usage": {
+    "prompt_tokens": 4245,
+    "completion_tokens": 3719,
+    "total_tokens": 7964,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2955,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "gen_json_ok": true,
+  "review_json_ok": true,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": 0,
+    "reason": "CV thiếu hoàn toàn các framework AI/ML (TensorFlow, PyTorch), cloud GCP, và các database yêu cầu; kinh nghiệm là phát triển phần mềm chung chứ không chuyên AI."
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 1,
+    "reason": "Chỉ có 2 năm kinh nghiệm (thiếu 3 năm so với yêu cầu senior), thiếu Java/Spring Boot, Kafka, Kubernetes và các framework Python khác."
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 2,
+    "reason": "Ứng viên có 3 năm kinh nghiệm Blockchain, thành thạo Rust, Node.js, JavaScript; phù hợp tốt cho vị trí thực tập dù thiếu Go và React."
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 1,
+    "reason": "Có 7 năm kinh nghiệm BA, mạnh về Agile, Jira, Confluence nhưng thiếu kỹ năng Java được yêu cầu cho Technical BA."
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 2,
+    "reason": "5 năm kinh nghiệm Data Analyst, đáp ứng đầy đủ tất cả kỹ năng bắt buộc (SQL, Python, Agile, Git, Jira) và có thêm Tableau, Hadoop."
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": 0,
+    "reason": "Ứng viên chuyên Angular, không có React (yêu cầu cốt lõi), cũng thiếu Node.js, Next.js, Docker, Kubernetes."
+   }
+  ]
+ },
+ "nvidia/nemotron-3-super-120b-a12b:free": {
+  "gen_info": {
+   "sec": 117.0,
+   "usage": {
+    "prompt_tokens": 757,
+    "completion_tokens": 3235,
+    "total_tokens": 3992,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2569,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "review_info": {
+   "sec": 27.6,
+   "usage": {
+    "prompt_tokens": 4245,
+    "completion_tokens": 2761,
+    "total_tokens": 7006,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2128,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "gen_json_ok": true,
+  "review_json_ok": true,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": true,
+    "words": 296,
+    "missing": [],
+    "extra": [],
+    "lang_ok": true
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": true,
+    "words": 187,
+    "missing": [],
+    "extra": [
+     "Server"
+    ],
+    "lang_ok": true
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": 1,
+    "reason": "Có kinh nghiệm Python và SQL nhưng thiếu kỹ năng AI/ML như TensorFlow, PyTorch, GCP và không có kinh nghiệm trực tiếp trong vai trò AI Engineer."
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 0,
+    "reason": "Kinh nghiệm chỉ 2 năm, thiếu nhiều kỹ năng bắt buộc như Python, Java, Spring Boot, Kafka, Kubernetes và không đáp ứng yêu cầu senior."
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 2,
+    "reason": "Có kinh nghiệm Blockchain, Node.js, Rust, JavaScript (ES6+), thiếu Go và React nhưng có thể học nhanh."
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 1,
+    "reason": "Có kinh nghiệm 7 năm, đầy đủ Agile/Scrum, Jira, Confluence nhưng thiếu kỹ năng Java bắt buộc."
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 2,
+    "reason": "Đủ tất cả kỹ năng bắt buộc và kinh nghiệm 5 năm, phù hợp vai trò Data Analyst."
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": 1,
+    "reason": "Có kinh nghiệm 7 năm và biết HTML/CSS, JS, TS nhưng thiếu React, Node.js, Next.js, Docker, Kubernetes và không có kinh nghiệm trực tiếp với stack yêu cầu."
+   }
+  ]
+ },
+ "google/gemma-4-31b-it:free": {
+  "gen_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_b"
+  },
+  "review_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_b"
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ },
+ "google/gemma-4-26b-a4b-it:free": {
+  "gen_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\""
+  },
+  "review_info": {
+   "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\""
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ },
+ "thinkingmachines/inkling:free": {
+  "gen_info": {
+   "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Ga"
+  },
+  "review_info": {
+   "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_step\":\"Ga"
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ },
+ "thinkingmachines/inkling-small:free": {
+  "gen_info": {
+   "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_ste"
+  },
+  "review_info": {
+   "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403,\"metadata\":{\"routing_funnel\":[{\"step\":\"Initial Endpoints\",\"endpoint_count\":1}],\"failed_routing_ste"
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ },
+ "dots-studio/dots-3-note-preview:free": {
+  "gen_info": {
+   "sec": 13.5,
+   "usage": {
+    "prompt_tokens": 725,
+    "completion_tokens": 1030,
+    "total_tokens": 1755,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 375,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "review_info": {
+   "sec": 25.2,
+   "usage": {
+    "prompt_tokens": 4028,
+    "completion_tokens": 2560,
+    "total_tokens": 6588,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 2093,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "gen_json_ok": true,
+  "review_json_ok": true,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": true,
+    "words": 230,
+    "missing": [],
+    "extra": [
+     "Docker",
+     "Spring Boot",
+     "Jenkins",
+     "Machine Learning",
+     "Spring Cloud",
+     "S3",
+     "Server"
+    ],
+    "lang_ok": true
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": true,
+    "words": 162,
+    "missing": [],
+    "extra": [
+     "Database",
+     "Monitoring",
+     "Server"
+    ],
+    "lang_ok": true
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": 0,
+    "reason": "Candidate's background is in backend software engineering with Java and NestJS, not AI or machine learning. Key AI skills like TensorFlow and PyTorch are missing, making the role unsuitable."
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 1,
+    "reason": "Candidate has relevant backend skills but lacks Java and specific frameworks like Spring Boot and Kafka. Additionally, experience is only 2 years versus the required 5 years."
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": 1,
+    "reason": "Candidate has strong blockchain experience and some required skills like Rust and Node.js, but lacks Go and React, which are essential for the role."
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 1,
+    "reason": "Candidate has excellent BA experience and tools matching the JD, but lacks Java programming skill, which is required for system analysis."
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": 2,
+    "reason": "Candidate has all required skills and sufficient experience (5 years vs. 3 years), making them highly suitable for the Data Analyst role."
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": 1,
+    "reason": "Candidate has strong frontend experience but uses Angular instead of React, and lacks Node.js and other technologies specified in the JD."
+   }
+  ]
+ },
+ "nvidia/nemotron-3.5-lightning:free": {
+  "gen_info": {
+   "sec": 308.5,
+   "usage": {
+    "prompt_tokens": 757,
+    "completion_tokens": 6000,
+    "total_tokens": 6757,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5872,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "review_info": {
+   "sec": 177.7,
+   "usage": {
+    "prompt_tokens": 4245,
+    "completion_tokens": 6000,
+    "total_tokens": 10245,
+    "cost": 0,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0,
+     "upstream_inference_prompt_cost": 0,
+     "upstream_inference_completions_cost": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 5571,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  },
+  "gen_json_ok": false,
+  "review_json_ok": false,
+  "gen": [
+   {
+    "id": "fit_vi",
+    "ok": false
+   },
+   {
+    "id": "senior_gap_en",
+    "ok": false
+   }
+  ],
+  "review": [
+   {
+    "id": "case1",
+    "bucket": "0diff",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case2",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case3",
+    "bucket": "1",
+    "rule": 1,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case4",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case5",
+    "bucket": "2",
+    "rule": 2,
+    "llm": null,
+    "reason": ""
+   },
+   {
+    "id": "case6",
+    "bucket": "0same",
+    "rule": 0,
+    "llm": null,
+    "reason": ""
+   }
+  ]
+ }
+}

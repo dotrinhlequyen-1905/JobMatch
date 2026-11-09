@@ -1,0 +1,131 @@
+{
+ "model": "dots-studio/dots-3-note-preview:free",
+ "gen_raw": "\n\n```json\n{\n  \"cvs\": [\n    {\n      \"id\": \"fit_vi\",\n      \"text\": \"Họ tên: Nguyễn Văn A\\nChức danh: Lead Backend Developer\\n\\nMục tiêu nghề nghiệp:\\nTrở thành Lead Backend Developer tại một tổ chức tài chính hàng đầu, áp dụng chuyên môn Java/Spring và kiến trúc Microservices để phát triển các giải pháp bảo hiểm life insurance tiên tiến, đóng góp vào sự phát triển của digital banking tại Việt Nam.\\n\\nKỹ năng:\\n- Chuyên môn: Java, Spring Boot, Spring Cloud, Microservices, Node.js, PostgreSQL, Oracle, AWS, Linux, SQL\\n- Kỹ năng mềm: Leadership, Phân tích hệ thống, Làm việc nhóm, Communication, Problem-solving\\n\\nKinh nghiệm làm việc:\\n- 9 năm kinh nghiệm phát triển Backend, trong đó 3 năm ở vị trí Lead.\\n- Thiết kế và triển khai hệ thống Microservices sử dụng Spring Cloud, giảm latency 30%.\\n- Quản lý cơ sở dữ liệu Oracle và PostgreSQL, tối ưu hiệu suất truy vấn SQL lên 40%.\\n- Triển khai CI/CD pipeline bằng Jenkins và Docker, tự động hóa quá trình phát hành.\\n- Điều hành Linux server, deploy ứng dụng trên AWS (EC2, S3, RDS).\\n\\nDự án:\\n- Dự án Insurance Core: Xây dựng hệ thống quản lý hợp đồng bảo hiểm life, xử lý 10,000 giao dịch/giờ.\\n- Digital Banking Platform: Tích hợp API backend với frontend, nâng cao trải nghiệm người dùng.\\n\\nHọc vấn:\\n- Cử nhân Khoa học máy tính, Đại học Bách Khoa Hà Nội (2014)\"\n    },\n    {\n      \"id\": \"senior_gap_en\",\n      \"text\": \"Name: John Smith\\nTitle: Backend Developer\\n\\nCareer Objective:\\nTo secure a Backend Developer role in a dynamic banking environment, leveraging 6 years of experience in Java, Microservices, and AWS to build scalable digital solutions and grow into senior positions.\\n\\nSkills:\\n- Technical: Java, SQL, AWS, Microservices, CI/CD, Oracle, PostgreSQL, Linux\\n- Soft Skills: Team Collaboration, Problem-solving, Communication, Adaptability\\n\\nWork Experience:\\n- 6 years as a Backend Developer, focusing on Java-based applications and database management.\\n- Developed and maintained Microservices architectures, improving system modularity.\\n- Implemented CI/CD pipelines, reducing deployment time by 25%.\\n- Worked with Oracle and PostgreSQL databases, writing efficient SQL queries.\\n- Deployed applications on AWS, ensuring cloud scalability.\\n- Gained experience in Linux environments for server configuration and monitoring.\\n\\nProjects:\\n- Banking App Backend: Built RESTful APIs for a mobile banking application, serving 5,000+ users.\\n- Data Migration Project: Migrated legacy data from Oracle to PostgreSQL, ensuring data integrity.\\n\\nEducation:\\n- Bachelor of Computer Science, University of Technology (2017)\"\n    }\n  ]\n}\n```",
+ "gen_info": {
+  "sec": 13.5,
+  "usage": {
+   "prompt_tokens": 725,
+   "completion_tokens": 1030,
+   "total_tokens": 1755,
+   "cost": 0,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0,
+    "upstream_inference_prompt_cost": 0,
+    "upstream_inference_completions_cost": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 375,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "review_raw": "\n\n{\n  \"results\": [\n    {\n      \"id\": \"case1\",\n      \"label\": 0,\n      \"matched_skills\": [\"Python\", \"SQL\"],\n      \"missing_skills\": [\"TypeScript\", \"TensorFlow\", \"PyTorch\", \"GCP\", \"PostgreSQL\", \"MongoDB\", \"Redis\"],\n      \"reason\": \"Candidate's background is in backend software engineering with Java and NestJS, not AI or machine learning. Key AI skills like TensorFlow and PyTorch are missing, making the role unsuitable.\"\n    },\n    {\n      \"id\": \"case2\",\n      \"label\": 1,\n      \"matched_skills\": [\"Python\", \"Docker\", \"Redis\", \"AWS\", \"GCP\", \"PostgreSQL\", \"MySQL\", \"MongoDB\"],\n      \"missing_skills\": [\"Java\", \"Spring Boot\", \"Kafka\", \"Flask\", \"FastAPI\"],\n      \"reason\": \"Candidate has relevant backend skills but lacks Java and specific frameworks like Spring Boot and Kafka. Additionally, experience is only 2 years versus the required 5 years.\"\n    },\n    {\n      \"id\": \"case3\",\n      \"label\": 1,\n      \"matched_skills\": [\"JavaScript\", \"Rust\", \"Node.js\"],\n      \"missing_skills\": [\"Go\", \"React\"],\n      \"reason\": \"Candidate has strong blockchain experience and some required skills like Rust and Node.js, but lacks Go and React, which are essential for the role.\"\n    },\n    {\n      \"id\": \"case4\",\n      \"label\": 1,\n      \"matched_skills\": [\"Agile/Scrum\", \"Jira\", \"Confluence\"],\n      \"missing_skills\": [\"Java\"],\n      \"reason\": \"Candidate has excellent BA experience and tools matching the JD, but lacks Java programming skill, which is required for system analysis.\"\n    },\n    {\n      \"id\": \"case5\",\n      \"label\": 2,\n      \"matched_skills\": [\"SQL\", \"Python\", \"Agile/Scrum\", \"Git\", \"Jira\"],\n      \"missing_skills\": [],\n      \"reason\": \"Candidate has all required skills and sufficient experience (5 years vs. 3 years), making them highly suitable for the Data Analyst role.\"\n    },\n    {\n      \"id\": \"case6\",\n      \"label\": 1,\n      \"matched_skills\": [\"JavaScript\", \"TypeScript\", \"HTML/CSS\"],\n      \"missing_skills\": [\"React\", \"Node.js\", \"Next.js\", \"Docker\", \"Kubernetes\"],\n      \"reason\": \"Candidate has strong frontend experience but uses Angular instead of React, and lacks Node.js and other technologies specified in the JD.\"\n    }\n  ]\n}",
+ "review_info": {
+  "sec": 25.2,
+  "usage": {
+   "prompt_tokens": 4028,
+   "completion_tokens": 2560,
+   "total_tokens": 6588,
+   "cost": 0,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0,
+    "upstream_inference_prompt_cost": 0,
+    "upstream_inference_completions_cost": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2093,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "gen_check": [
+  {
+   "id": "fit_vi",
+   "ok": true,
+   "words": 230,
+   "missing": [],
+   "extra": [
+    "Docker",
+    "Spring Boot",
+    "Jenkins",
+    "Machine Learning",
+    "Spring Cloud",
+    "S3",
+    "Server"
+   ],
+   "lang_ok": true
+  },
+  {
+   "id": "senior_gap_en",
+   "ok": true,
+   "words": 162,
+   "missing": [],
+   "extra": [
+    "Database",
+    "Monitoring",
+    "Server"
+   ],
+   "lang_ok": true
+  }
+ ],
+ "review_check": [
+  {
+   "id": "case1",
+   "bucket": "0diff",
+   "rule": 0,
+   "llm": 0,
+   "reason": "Candidate's background is in backend software engineering with Java and NestJS, not AI or machine learning. Key AI skills like TensorFlow and PyTorch are missing, making the role unsuitable."
+  },
+  {
+   "id": "case2",
+   "bucket": "1",
+   "rule": 1,
+   "llm": 1,
+   "reason": "Candidate has relevant backend skills but lacks Java and specific frameworks like Spring Boot and Kafka. Additionally, experience is only 2 years versus the required 5 years."
+  },
+  {
+   "id": "case3",
+   "bucket": "1",
+   "rule": 1,
+   "llm": 1,
+   "reason": "Candidate has strong blockchain experience and some required skills like Rust and Node.js, but lacks Go and React, which are essential for the role."
+  },
+  {
+   "id": "case4",
+   "bucket": "2",
+   "rule": 2,
+   "llm": 1,
+   "reason": "Candidate has excellent BA experience and tools matching the JD, but lacks Java programming skill, which is required for system analysis."
+  },
+  {
+   "id": "case5",
+   "bucket": "2",
+   "rule": 2,
+   "llm": 2,
+   "reason": "Candidate has all required skills and sufficient experience (5 years vs. 3 years), making them highly suitable for the Data Analyst role."
+  },
+  {
+   "id": "case6",
+   "bucket": "0same",
+   "rule": 0,
+   "llm": 1,
+   "reason": "Candidate has strong frontend experience but uses Angular instead of React, and lacks Node.js and other technologies specified in the JD."
+  }
+ ]
+}

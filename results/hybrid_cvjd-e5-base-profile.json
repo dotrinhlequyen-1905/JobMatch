@@ -1,0 +1,20 @@
+{
+ "model": "models/cvjd-e5-base-profile",
+ "text": "profile",
+ "w_sem": 0.3,
+ "w_skill": 0.6,
+ "w_exp": 0.1,
+ "floor": 0.4,
+ "val": {
+  "ndcg@10": 0.9123,
+  "mrr@10": 0.9759,
+  "recall@20": 0.9967,
+  "recall@50": 1.0
+ },
+ "test": {
+  "ndcg@10": 0.9055,
+  "mrr@10": 0.9822,
+  "recall@20": 0.9947,
+  "recall@50": 0.9995
+ }
+}

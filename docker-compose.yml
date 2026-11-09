@@ -1,62 +1,98 @@
-﻿version: '3.8'
+x-backend: &backend
+  build:
+    context: .
+    dockerfile: backend/Dockerfile
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@db:5432/${POSTGRES_DB:-recruit_ai}
+    REDIS_URL: redis://redis:6379/0
+    TASK_ALWAYS_EAGER: "false"
+    AUTO_CREATE_SCHEMA: "false"
+    UPLOAD_DIR: /workspace/backend/uploads
+  volumes:
+    - uploads:/workspace/backend/uploads
+    - ./models:/workspace/models:ro
+    - ./data:/workspace/data:ro
 
 services:
   db:
-    image: pgvector/pgvector:pg16
+    image: pgvector/pgvector:pg17
     environment:
-      POSTGRES_DB: recruitment_db
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${POSTGRES_DB:-recruit_ai}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
     ports:
-      - "5432:5432"
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
   redis:
     image: redis:7-alpine
+    command: redis-server --appendonly yes
     ports:
-      - "6379:6379"
-
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  migrate:
+    <<: *backend
+    command: alembic upgrade head
+    depends_on:
+      db:
+        condition: service_healthy
   backend:
-    build: ./backend
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-    volumes:
-      - ./backend:/app
+    <<: *backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
     ports:
-      - "8000:8000"
-    env_file: .env
+      - "127.0.0.1:8000:8000"
     depends_on:
-      - db
-      - redis
-
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
   celery-worker:
-    build: ./backend
-    command: celery -A app.tasks.celery_app worker -l info
-    volumes:
-      - ./backend:/app
-    env_file: .env
+    <<: *backend
+    command: celery -A app.tasks.celery_app:celery_app worker --loglevel=info --concurrency=${CELERY_CONCURRENCY:-2}
     depends_on:
-      - db
-      - redis
-
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
+  celery-beat:
+    <<: *backend
+    command: celery -A app.tasks.celery_app:celery_app beat --loglevel=info --schedule=/tmp/jobmatch-beat
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      redis:
+        condition: service_healthy
   frontend:
-    build: ./frontend
-    ports:
-      - "5173:5173"
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      target: production
   nginx:
     image: nginx:alpine
     ports:
       - "80:80"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
     depends_on:
       - backend
       - frontend
 
 volumes:
   pgdata:
+  uploads:
+  redisdata:

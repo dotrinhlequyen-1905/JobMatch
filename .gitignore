@@ -95,3 +95,21 @@ logs/
 *.tmp
 *.bak
 *.orig
+
+# Local migration backups, caches and generated datasets
+.archive/
+.cache/
+*.db
+*.db-shm
+*.db-wal
+celerybeat-schedule*
+data/**
+!data/processed/
+!data/processed/skills_vocab.json
+e2e/screenshots/
+docs/specification-extracted.txt
+.kilo/
+
+# Tài liệu nộp riêng, không đưa lên repo
+docs/**/*.pdf
+*.pptx

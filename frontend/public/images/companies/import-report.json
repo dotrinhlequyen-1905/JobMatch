@@ -1,0 +1,1419 @@
+{
+  "dataset_names": 1083,
+  "normalized_companies": 1068,
+  "cached_companies": 715,
+  "missing": [
+    {
+      "name": "ADI Consulting VN",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "ADI Vietnam",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "ADI' Client",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Alpaca Solutions",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Asilla",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "AURIFY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Automation Consulting Pty Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "B2BE GSS Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Bacoor Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Bamboo Software",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "BASE Business Solution",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Be Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "BEWAO CORPORATION",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Beyondsoft Technology (Vietnam) Company Limited",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "BioTuring",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Blogic Systems",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Blue Belt Technology",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "BLUE DRAGON COMMUNICATIONS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Bolt Tech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Bosch Global Software Technologies Company Limited",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Bray Leion Splash Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Breadstack Technologies Inc",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Business4you AG",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Buymed",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Byteuptech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CA ADVANCE VIETNAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Capgemini Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CarDoctor",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CellphoneS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CESA Vietnam (part of CEVA Logistic)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Chiroro-Net Viet",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Chotot",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Cigro Inc.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Circle",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CIT Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Cloud Ace",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Coder Trove",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CoderPush",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CoFounder Venture Partners Viet Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Collaboration Betters The World (CBTW)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Collaboration Betters The World - B.O.T",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Company Central Pte. Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần 540hz Media",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN AUTHENTIC EDUCATION HUB",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần BDS PRO",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CARNOW",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CHỨNG KHOÁN KAFI",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công Ty Cổ Phần Chứng Khoán Thành Công",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CHỨNG KHOÁN VPS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CITICS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ BETASOFT",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ INVIV CLOUD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần Công nghệ MicroTech",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN ĐẦU TƯ QUỐC TẾ - MEGA GANGNAM",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công ty Cổ phần Devitech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần Dịch vụ Chữ ký số Intrust",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN DƯỢC PHẨM BEWELLPHARMA",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần giao dịch hàng hóa Gia Cát Lợi",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN GIÁO DỤC LOGIC LAB",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN GLOBAL TECHNOLOGY SOLUTIONS VIỆT NAM",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN KAOPIZ HOLDINGS",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công ty Cổ phần Kaopiz Software",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công ty cổ phần LifeteX",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN ONEMEDIC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty cổ phần phát triển phần mềm giải pháp phân phối dược và nhà thuốc",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công ty cổ phần Piscale",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Cổ phần Thể thao PickoNow",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CỔ PHẦN THIẾT KẾ BLATTSTUDIOS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY CP CÔNG NGHỆ SIGINX",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty CP Công nghệ Tài chính FinHub",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty Decentralab",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH BPO INFINITY INNOVATIONS GROUP",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH BULL LABS",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "name": "Công Ty TNHH Cammsys Việt Nam",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công Ty TNHH Clever Creations Tech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH Công Nghệ - Thương Mại Mây",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH CÔNG NGHỆ HAY HAY GLOBAL",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY TNHH CÔNG NGHỆ SỐ VÀ CHUYỂN ĐỔI SỐ Y TẾ",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH CÔNG NGHỆ VÀ TƯ VẤN DOANH NGHIỆP INNOCOM",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "name": "Công ty TNHH Công Nghệ, Giải Trí và Truyền Thông EVOLUX",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH DỊCH VỤ GIÁ TRỊ GIA TĂNG GOLDENGATE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH Digital Marketing và E-commerce PioneerX",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH GIẢI PHÁP THƯƠNG MẠI VÀ CÔNG NGHỆ ANV GLOBAL",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công ty TNHH GKBEAUTY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH GROOO INTERNATIONAL",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "name": "Công ty TNHH Hòa bình Không gian mạng",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH JDO GROUP",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH KINH DOANH TỔNG HỢP TUẤN PHÁT",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY TNHH KUNO TECHNOLOGIES",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY TNHH KỸ THUẬT SỐ DR",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH M4G",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH Med-Aid",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Công Ty TNHH Mi-Jack Manufacturing Global Viet Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH MTV STRIDE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH NBIV",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công Ty TNHH Phalanx Services",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Công ty TNHH Thương mại GPS Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CÔNG TY TNHH  THƯƠNG MẠI TRÚC ANH MEDIA",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "CÔNG TY TNHH WOZEL TTP",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CTY TNHH TRUYỀN THÔNG SKYMEDIA",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CUBICSTACK SOLUTIONS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "CyberLogitec Vietnam Co., Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Dai-ichi Life Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Daoukiwoom Innovation",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Datalogic Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "DatVietVAC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Dayone Technologies",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Decathlon Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Deliveree On-Demand Logistics",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "DIGI-TEXX VIETNAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Dinotronic AG",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "DNSE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "DOL English",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Dr.JOY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "DTS Software Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Eatlab co Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "ELCA",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Elisoft",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "eLotus",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Endava Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Entetsu Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Epsilon Labs",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Esoft Vietnam., Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "EUROFINS GSC IT VIETNAM COMPANY LIMITED",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "EV Search's Fintech Partner",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Fastboy Marketing",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Fastcare",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FAVOLIST5 ASIA",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FE CREDIT",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Fincorp.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FireAnt JSC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FireGroup",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Fitech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Floware",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Fram",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FuelCloud",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Fullerton Health",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "FWD VTC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Gearment Co.,Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GEEK UP",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GEM Corporation",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GEM Digital",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GFT Technologies Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GHN",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GLOBALTECH",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "GLOHOW",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Glory Software Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Goodia Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Grab (Vietnam) Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "HBN Solution",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "HDBank",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "HDI TECH",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "HDWEBSOFT",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Homebase (YC W21)",
+      "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "HONGTHAI Technical",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "HSC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Hubble Pte. Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Hybrid Technologies",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "ICONDO VIETNAM COMPANY LIMITED",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "iDeaLogic",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "ILA Viet Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "INDTI TECHNOLOGY SERVICES AND TRADING CO., LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Infinity Technologies Global",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Infosys Việt Nam",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "INTECH Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Integro Technologies",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "iorta TechNXT",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "IT Company",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "ITCompany",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "IVC (ISB Vietnam)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "IZISOLUTION",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "JCV Corp",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Joblogic",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "K&M Holdings",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "KIDO Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Kingfoodmart",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "KMS Technology",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Koh Young Technology Inc",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Koidra Tech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Laidon Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Lampart",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "name": "LEAP",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LeapXpert",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LG CNS Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LG Electronics Development Vietnam (LGEDV)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Liberty Insurance Limited",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Liberty Technology",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LINE Technology Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LINE Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LitGroup",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Local Life Technology Ltd.,",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Long Hưng",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "LOVEPOP VIỆT NAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "LYNKID JSC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "M Village",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "M_Service (MoMo)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MAPLE LABS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MAXIMUS SOLUTION COMPANY LIMITED",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MB Bank",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MED-AID COMPANY",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "MEGAZONE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MenuCoster",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MINU Pte. Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Mirei",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MiTek Viet Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MODEC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "MONEY FORWARD VIETNAM CO.,LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Mycolor Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "N.A.M",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Nakivo",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Nam Long Software Ltd",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Nami Corporation",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NANOBYTE SOFTWARE TECHNOLOGY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Nanosoft",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NBG HIGHTECH",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Neos Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NetNam Corporation - Branch in HCMC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NEW IT",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NEXDOR VIET NAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NEXON DEV VINA",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NEYU Ltd.,",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "NFQ Asia",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Ngân hàng TMCP Lộc Phát Việt Nam LPBank",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Ngân hàng TMCP Phương Đông | OCB",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Ngân hàng TMCP Thịnh vượng và Phát triển (PGBank)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Niteco Vietnam Co., Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Novobi",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Ogilvy",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "OLLI",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "One Mount Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "ONE Tech Stop Vietnam Company Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "OnePay",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Onpoint",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Opla CRM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Optimizely",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "OQR CO., LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "OTS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Oursoucing for Bank",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Outpost24",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "PAL TECH",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Panasonic Vietnam Group – Panasonic R&D Center Vietnam (PRDCV)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Parcel Perform",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Pasona Tech Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "PAVE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "PCB - Vietnam Credit Information",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Persol Career Tech Studio Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Phu Hung Securities (PHS)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "PLAYSTUDIOS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Pollen",
+      "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Port Cities Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "QKIT Software (QUÝ KHÁNH IT)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Quang Trung Software Development",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "rakumo Co., Ltd",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Rakus Vietnam Company",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Rakuten Fintech Vietnam Co., Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "RAON World Solution Pte. Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "RealEstateDoc",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Reflex Technologies Viet Nam",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Reforged Labs",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Regen Technology Limited",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Renesas Design Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Renn Labs",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Renova Cloud",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Reputyze Asia",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Resola Inc",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Restaff – House Of Norway",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Rexy Technology",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "S3 Innovate",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Saigon Technology",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Salmon SG",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SAVILLS VIETNAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Scandinavian Software Park",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Seatech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SECUTIX",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Sellnity",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Semrush",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SEN VÀNG VIỆT NAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Seven System Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Siam Brothers Vietnam JSC.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Silentium Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Simple Tech Investment",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Simpson Strong-Tie Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Skedulo Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Skill 4 Asia",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Smilegate Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SOFTFLEX LLC CO.,LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Softly LLC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SoftRoad Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SOLIS LAB",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SourceCode",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "South East Asia Development Company | Seadev",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "SSI Securities Corporation",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Stealth Startup in AI",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Sungrove Tech Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Suoi Tien Theme Park Official",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Taixin Printing Vina",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "TecAlliance Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Techbase Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Techcombank",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "TechLead",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Teko Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "THE FIRST ONE JSC.,",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Thunder Solutions Co., Ltd.",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Thuy Anh Technology CO., LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Timo",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Tinh Van Software",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Titan DMS",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "TMZ CO.,LTD",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Tocco",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Topicus Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "TP Entertainment",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "TVT Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "UAB Coded",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Unifiedpost",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Unity Sport JSC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VAR META",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vega Corporation",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Veriserve Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "vesta pacem",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "VeXeRe",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vidaltek",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Viet Thai International",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VIETCAP SECURITIES JOINT STOCK COMPANY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VietNam OFFSHORE",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Vietnam Silicon",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vietnix",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VIETTEL CUSTOMER SERVICE",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Viettel Group",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Viettel Post (A Member of Viettel Group)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Viettel Software Services (A Member of Viettel Group)",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VILL VietNam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VIMES",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vinamilk",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VINX VIETNAM",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vireo Health",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Vitalify Asia",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VNGGames",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VNPT EPAY",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VOYAGER INC",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VRB",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "VSI",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "WAO",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "WATA Software",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Weldcom",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Xavis Tech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "XionTech",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Xsoft Company",
+      "reason": "original recruitment source uses a platform placeholder"
+    },
+    {
+      "name": "Y Tế Phương Đông",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Yes4All",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "YRGLM Việt Nam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Zodiac Software",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "ZOI SGN",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "name": "Zuhlke Engineering Vietnam",
+      "reason": "profile recovery: HTTPError: HTTP Error 429: Too Many Requests"
+    }
+  ]
+}

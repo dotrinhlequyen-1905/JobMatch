@@ -1,0 +1,121 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "gen_raw": "{\n  \"cvs\": [\n    {\n      \"id\": \"fit_vi\",\n      \"text\": \"Họ tên: Nguyễn Văn A\\nChức danh: Lead Backend Developer\\nMục tiêu nghề nghiệp: Ứng dụng kiến thức và kinh nghiệm 9 năm trong phát triển hệ thống backend để góp phần nâng cao hiệu suất và độ tin cậy của nền tảng ngân hàng số.\\n\\nKỹ năng: Java, Spring, SQL, PostgreSQL, Oracle, Microservices, Node.js, CI/CD, Linux, AWS, Làm việc nhóm, Giải quyết vấn đề, Tin học tốt.\\n\\nKinh nghiệm làm việc:\\n- Công ty ABC Bank, Hà Nội, 01/2015 – Present (9 năm)\\n  + Thiết kế và phát triển các dịch vụ backend bằng Java và Spring Framework, đảm bảo tích hợp với frontend và cơ sở dữ liệu.\\n  + Xây dựng kiến trúc microservices trên Linux, triển khai dịch vụ một cách ổn định.\\n  + Viết và tối ưu truy vấn SQL trên PostgreSQL và Oracle, giảm thời gian truy vấn trung bình 30%.\\n  + Phát triển các dịch vụ Node.js để hỗ trợ các chức năng phụ trợ, tăng throughput lên 20%.\\n  + Triển khai pipeline CI/CD trên AWS, tự động hoá quá trình build, test và deploy.\\n  + Giám sát performance hệ thống, xử lý sự cố và đề xuất cải tiến, giảm downtime xuống dưới 0,5%.\\n  + Hợp tác với đội front-end để thiết kế giao diện kết nối giữa các dịch vụ.\\n  + Đào tạo và hướng dẫn junior developer, nâng cao khả năng làm việc nhóm của đội.\\n\\nDự án:\\n- Hệ thống thanh toán điện tử (2022): Sử dụng Java, Spring, Microservices, AWS, PostgreSQL, CI/CD; xử lý hơn 1 triệu giao dịch/ tháng.\\n- Nâng cấp core banking (2020): Di chuyển dữ liệu từ Oracle sang PostgreSQL, tối ưu truy vấn, giảm latency 25%.\\n\\nHọc vấn: Đại học Bách Khoa Hà Nội, Khoa Công nghệ Thông tin, 2014.\"\n    },\n    {\n      \"id\": \"senior_gap_en\",\n      \"text\": \"Full Name: John Doe\\nPosition: Junior Backend Developer\\nCareer Objective: To leverage my 6 years of backend development experience to contribute to robust and scalable banking systems.\\n\\nSkills: Java, SQL, AWS, Microservices, CI/CD, Oracle, PostgreSQL, Linux, Teamwork, Problem Solving, Communication.\\n\\nProfessional Experience:\\n- XYZ Financial Services, Ho Chi Minh City, 01/2018 – Present (6 years)\\n  + Developed server-side logic using Java and SQL, ensuring data integrity and performance.\\n  + Maintained and optimized Oracle and PostgreSQL databases, reducing query response time by 25%.\\n  + Designed and deployed microservices on Linux environments, improving system modularity.\\n  + Implemented CI/CD pipelines on AWS, automating build, test, and release processes.\\n  + Monitored application performance, troubleshot issues, and achieved 99.9% uptime.\\n  + Collaborated with cross-functional teams to gather requirements and deliver features on schedule.\\n  + Participated in code reviews and mentored interns, fostering knowledge sharing.\\n\\nProjects:\\n- Online Loan Application Platform (2021): Built backend with Java, SQL, AWS, Microservices, CI/CD; supported 10k concurrent users.\\n- Data Migration Initiative (2019): Migrated legacy data from Oracle to PostgreSQL on Linux, ensuring zero data loss.\\n\\nEducation: Bachelor of Science in Computer Science, University of Technology, 2017.\"\n    }\n  ]\n}",
+ "gen_info": {
+  "sec": 117.0,
+  "usage": {
+   "prompt_tokens": 757,
+   "completion_tokens": 3235,
+   "total_tokens": 3992,
+   "cost": 0,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0,
+    "upstream_inference_prompt_cost": 0,
+    "upstream_inference_completions_cost": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2569,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "review_raw": "{\n  \"results\": [\n    {\n      \"id\": \"case1\",\n      \"label\": 1,\n      \"matched_skills\": [\"Python\"],\n      \"missing_skills\": [\"TypeScript\", \"TensorFlow\", \"PyTorch\", \"GCP\", \"PostgreSQL\", \"MongoDB\", \"Redis\"],\n      \"reason\": \"Có kinh nghiệm Python và SQL nhưng thiếu kỹ năng AI/ML như TensorFlow, PyTorch, GCP và không có kinh nghiệm trực tiếp trong vai trò AI Engineer.\"\n    },\n    {\n      \"id\": \"case2\",\n      \"label\": 0,\n      \"matched_skills\": [\"Docker\", \"Redis\", \"AWS\", \"Django\"],\n      \"missing_skills\": [\"Python\", \"Java\", \"Spring Boot\", \"Kafka\", \"Kubernetes\", \"Flask\", \"FastAPI\"],\n      \"reason\": \"Kinh nghiệm chỉ 2 năm, thiếu nhiều kỹ năng bắt buộc như Python, Java, Spring Boot, Kafka, Kubernetes và không đáp ứng yêu cầu senior.\"\n    },\n    {\n      \"id\": \"case3\",\n      \"label\": 2,\n      \"matched_skills\": [\"Rust\", \"Node.js\", \"JavaScript\"],\n      \"missing_skills\": [\"Go\", \"React\"],\n      \"reason\": \"Có kinh nghiệm Blockchain, Node.js, Rust, JavaScript (ES6+), thiếu Go và React nhưng có thể học nhanh.\"\n    },\n    {\n      \"id\": \"case4\",\n      \"label\": 1,\n      \"matched_skills\": [\"Confluence\", \"Agile/Scrum\", \"Jira\"],\n      \"missing_skills\": [\"Java\"],\n      \"reason\": \"Có kinh nghiệm 7 năm, đầy đủ Agile/Scrum, Jira, Confluence nhưng thiếu kỹ năng Java bắt buộc.\"\n    },\n    {\n      \"id\": \"case5\",\n      \"label\": 2,\n      \"matched_skills\": [\"SQL\", \"Python\", \"Agile/Scrum\", \"Git\", \"Jira\"],\n      \"missing_skills\": [],\n      \"reason\": \"Đủ tất cả kỹ năng bắt buộc và kinh nghiệm 5 năm, phù hợp vai trò Data Analyst.\"\n    },\n    {\n      \"id\": \"case6\",\n      \"label\": 1,\n      \"matched_skills\": [\"JavaScript\", \"TypeScript\", \"HTML/CSS\"],\n      \"missing_skills\": [\"React\", \"Node.js\", \"Next.js\", \"Docker\", \"Kubernetes\"],\n      \"reason\": \"Có kinh nghiệm 7 năm và biết HTML/CSS, JS, TS nhưng thiếu React, Node.js, Next.js, Docker, Kubernetes và không có kinh nghiệm trực tiếp với stack yêu cầu.\"\n    }\n  ]\n}",
+ "review_info": {
+  "sec": 27.6,
+  "usage": {
+   "prompt_tokens": 4245,
+   "completion_tokens": 2761,
+   "total_tokens": 7006,
+   "cost": 0,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0,
+    "upstream_inference_prompt_cost": 0,
+    "upstream_inference_completions_cost": 0
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2128,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "gen_check": [
+  {
+   "id": "fit_vi",
+   "ok": true,
+   "words": 296,
+   "missing": [],
+   "extra": [],
+   "lang_ok": true
+  },
+  {
+   "id": "senior_gap_en",
+   "ok": true,
+   "words": 187,
+   "missing": [],
+   "extra": [
+    "Server"
+   ],
+   "lang_ok": true
+  }
+ ],
+ "review_check": [
+  {
+   "id": "case1",
+   "bucket": "0diff",
+   "rule": 0,
+   "llm": 1,
+   "reason": "Có kinh nghiệm Python và SQL nhưng thiếu kỹ năng AI/ML như TensorFlow, PyTorch, GCP và không có kinh nghiệm trực tiếp trong vai trò AI Engineer."
+  },
+  {
+   "id": "case2",
+   "bucket": "1",
+   "rule": 1,
+   "llm": 0,
+   "reason": "Kinh nghiệm chỉ 2 năm, thiếu nhiều kỹ năng bắt buộc như Python, Java, Spring Boot, Kafka, Kubernetes và không đáp ứng yêu cầu senior."
+  },
+  {
+   "id": "case3",
+   "bucket": "1",
+   "rule": 1,
+   "llm": 2,
+   "reason": "Có kinh nghiệm Blockchain, Node.js, Rust, JavaScript (ES6+), thiếu Go và React nhưng có thể học nhanh."
+  },
+  {
+   "id": "case4",
+   "bucket": "2",
+   "rule": 2,
+   "llm": 1,
+   "reason": "Có kinh nghiệm 7 năm, đầy đủ Agile/Scrum, Jira, Confluence nhưng thiếu kỹ năng Java bắt buộc."
+  },
+  {
+   "id": "case5",
+   "bucket": "2",
+   "rule": 2,
+   "llm": 2,
+   "reason": "Đủ tất cả kỹ năng bắt buộc và kinh nghiệm 5 năm, phù hợp vai trò Data Analyst."
+  },
+  {
+   "id": "case6",
+   "bucket": "0same",
+   "rule": 0,
+   "llm": 1,
+   "reason": "Có kinh nghiệm 7 năm và biết HTML/CSS, JS, TS nhưng thiếu React, Node.js, Next.js, Docker, Kubernetes và không có kinh nghiệm trực tiếp với stack yêu cầu."
+  }
+ ]
+}

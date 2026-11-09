@@ -1,22 +1,12 @@
-﻿.PHONY: dev stop migrate test lint
-
+.PHONY: dev up down test api-spec
 dev:
 	docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
-
-stop:
+up:
+	docker compose up --build -d
+down:
 	docker compose down
-
-migrate:
-	docker compose exec backend alembic upgrade head
-
-migrate-create:
-	docker compose exec backend alembic revision --autogenerate -m "$(msg)"
-
 test:
-	docker compose exec backend pytest
-
-lint-backend:
-	docker compose exec backend ruff check .
-
-lint-frontend:
-	docker compose exec frontend npm run lint
+	cd backend && python -m pytest -q
+	cd frontend && npm run build
+api-spec:
+	python scripts/export_api.py

@@ -1,1 +1,3194 @@
-﻿openapi: 3.0.3
+openapi: 3.1.0
+info:
+  title: JobMatch
+  version: 1.0.0
+paths:
+  /api/v1/admin/stats:
+    get:
+      tags:
+      - admin
+      summary: Stats
+      operationId: stats_api_v1_admin_stats_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/admin/users:
+    get:
+      tags:
+      - admin
+      summary: Users
+      operationId: users_api_v1_admin_users_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: q
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Q
+      - name: role
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Role
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/companies:
+    get:
+      tags:
+      - admin
+      summary: Companies
+      operationId: companies_api_v1_admin_companies_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          default: PENDING
+          title: Status
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/jobs:
+    get:
+      tags:
+      - admin
+      summary: Jobs
+      operationId: jobs_api_v1_admin_jobs_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          default: PENDING
+          title: Status
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/packages:
+    get:
+      tags:
+      - admin
+      summary: Packages
+      operationId: packages_api_v1_admin_packages_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    post:
+      tags:
+      - admin
+      summary: Upsert Package
+      operationId: upsert_package_api_v1_admin_packages_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PackageIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/admin/orders:
+    get:
+      tags:
+      - admin
+      summary: Orders
+      operationId: orders_api_v1_admin_orders_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Status
+      - name: q
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Q
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/transactions:
+    get:
+      tags:
+      - admin
+      summary: Transactions
+      operationId: transactions_api_v1_admin_transactions_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Status
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/reconcile:
+    get:
+      tags:
+      - admin
+      summary: Run Reconcile
+      operationId: run_reconcile_api_v1_admin_reconcile_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/admin/refunds:
+    get:
+      tags:
+      - admin
+      summary: Refunds
+      operationId: refunds_api_v1_admin_refunds_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          default: REQUESTED
+          title: Status
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/orders/{order_id}/resolve:
+    post:
+      tags:
+      - admin
+      summary: Resolve Order
+      operationId: resolve_order_api_v1_admin_orders__order_id__resolve_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Order Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefundDecision'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/transactions/{tx_id}/assign:
+    post:
+      tags:
+      - admin
+      summary: Assign Transaction
+      operationId: assign_transaction_api_v1_admin_transactions__tx_id__assign_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: tx_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Tx Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AssignIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/reports:
+    get:
+      tags:
+      - admin
+      summary: Reports
+      operationId: reports_api_v1_admin_reports_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          default: OPEN
+          title: Status
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/reports/{report_id}:
+    post:
+      tags:
+      - admin
+      summary: Decide Report
+      operationId: decide_report_api_v1_admin_reports__report_id__post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: report_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Report Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReportDecision'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/audit-logs:
+    get:
+      tags:
+      - admin
+      summary: Audit Logs
+      operationId: audit_logs_api_v1_admin_audit_logs_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: action
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Action
+      - name: actor_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Actor Id
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 50
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/users/{user_id}/status:
+    post:
+      tags:
+      - admin
+      summary: Set User Status
+      operationId: set_user_status_api_v1_admin_users__user_id__status_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: User Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/companies/{cid}/review:
+    post:
+      tags:
+      - admin
+      summary: Review Company
+      operationId: review_company_api_v1_admin_companies__cid__review_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cid
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Cid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/jobs/{job_id}/moderate:
+    patch:
+      tags:
+      - admin
+      summary: Review Job
+      operationId: review_job_api_v1_admin_jobs__job_id__moderate_patch
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/admin/refunds/{rid}:
+    post:
+      tags:
+      - admin
+      summary: Decide Refund
+      operationId: decide_refund_api_v1_admin_refunds__rid__post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: rid
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Rid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefundDecision'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/applications:
+    get:
+      tags:
+      - applications
+      summary: My Applications
+      operationId: my_applications_api_v1_applications_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    post:
+      tags:
+      - applications
+      summary: Apply
+      operationId: apply_api_v1_applications_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApplyIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/applications/{app_id}/withdraw:
+    post:
+      tags:
+      - applications
+      summary: Withdraw
+      operationId: withdraw_api_v1_applications__app_id__withdraw_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: app_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: App Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/applications/{app_id}/slots:
+    get:
+      tags:
+      - applications
+      summary: Available Slots
+      operationId: available_slots_api_v1_applications__app_id__slots_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: app_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: App Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/applications/jobs/{job_id}:
+    get:
+      tags:
+      - applications
+      summary: Job Applications
+      operationId: job_applications_api_v1_applications_jobs__job_id__get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      - name: status
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Status
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/applications/{app_id}/manage:
+    get:
+      tags:
+      - applications
+      summary: Application Detail
+      operationId: application_detail_api_v1_applications__app_id__manage_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: app_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: App Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/applications/{app_id}/status:
+    patch:
+      tags:
+      - applications
+      summary: Transition
+      operationId: transition_api_v1_applications__app_id__status_patch
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: app_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: App Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransitionIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/register:
+    post:
+      tags:
+      - auth
+      summary: Register
+      operationId: register_api_v1_auth_register_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/login:
+    post:
+      tags:
+      - auth
+      summary: Login
+      operationId: login_api_v1_auth_login_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/refresh:
+    post:
+      tags:
+      - auth
+      summary: Refresh
+      operationId: refresh_api_v1_auth_refresh_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/logout:
+    post:
+      tags:
+      - auth
+      summary: Logout
+      operationId: logout_api_v1_auth_logout_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/forgot-password:
+    post:
+      tags:
+      - auth
+      summary: Forgot Password
+      operationId: forgot_password_api_v1_auth_forgot_password_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ForgotPasswordIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/reset-password:
+    post:
+      tags:
+      - auth
+      summary: Reset Password
+      operationId: reset_password_api_v1_auth_reset_password_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResetPasswordIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/verify-email:
+    post:
+      tags:
+      - auth
+      summary: Verify Email
+      operationId: verify_email_api_v1_auth_verify_email_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TokenIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/auth/resend-verification:
+    post:
+      tags:
+      - auth
+      summary: Resend Verification
+      operationId: resend_verification_api_v1_auth_resend_verification_post
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/companies:
+    post:
+      tags:
+      - companies
+      summary: Create Company
+      operationId: create_company_api_v1_companies_post
+      security:
+      - HTTPBearer: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompanyIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    get:
+      tags:
+      - companies
+      summary: Companies
+      operationId: companies_api_v1_companies_get
+      parameters:
+      - name: q
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Q
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 20
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/companies/me:
+    get:
+      tags:
+      - companies
+      summary: Get Company
+      operationId: get_company_api_v1_companies_me_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    put:
+      tags:
+      - companies
+      summary: Update Company
+      operationId: update_company_api_v1_companies_me_put
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CompanyIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/companies/me/logo:
+    post:
+      tags:
+      - companies
+      summary: Upload Logo
+      operationId: upload_logo_api_v1_companies_me_logo_post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Body_upload_logo_api_v1_companies_me_logo_post'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/companies/logos/{filename}:
+    get:
+      tags:
+      - companies
+      summary: Logo
+      operationId: logo_api_v1_companies_logos__filename__get
+      parameters:
+      - name: filename
+        in: path
+        required: true
+        schema:
+          type: string
+          title: Filename
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/companies/{company_id}:
+    get:
+      tags:
+      - companies
+      summary: Company Detail
+      operationId: company_detail_api_v1_companies__company_id__get
+      parameters:
+      - name: company_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Company Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/cvs:
+    get:
+      tags:
+      - cvs
+      summary: My Cvs
+      operationId: my_cvs_api_v1_cvs_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    post:
+      tags:
+      - cvs
+      summary: Upload Cv
+      operationId: upload_cv_api_v1_cvs_post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Body_upload_cv_api_v1_cvs_post'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/cvs/{cv_id}:
+    get:
+      tags:
+      - cvs
+      summary: Get Cv
+      operationId: get_cv_api_v1_cvs__cv_id__get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    put:
+      tags:
+      - cvs
+      summary: Update Cv
+      operationId: update_cv_api_v1_cvs__cv_id__put
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CVUpdate'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    delete:
+      tags:
+      - cvs
+      summary: Delete Cv
+      operationId: delete_cv_api_v1_cvs__cv_id__delete
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/cvs/{cv_id}/file:
+    get:
+      tags:
+      - cvs
+      summary: Download Cv
+      operationId: download_cv_api_v1_cvs__cv_id__file_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/interview-slots/{slot_id}/hold:
+    post:
+      tags:
+      - interviews
+      summary: Hold
+      operationId: hold_api_v1_interview_slots__slot_id__hold_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: slot_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Slot Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HoldIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/interview-slots/{slot_id}/book:
+    post:
+      tags:
+      - interviews
+      summary: Confirm
+      operationId: confirm_api_v1_interview_slots__slot_id__book_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: slot_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Slot Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/interview-slots/{slot_id}/cancel:
+    post:
+      tags:
+      - interviews
+      summary: Cancel
+      operationId: cancel_api_v1_interview_slots__slot_id__cancel_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: slot_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Slot Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancelIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/interview-slots/{slot_id}/result:
+    post:
+      tags:
+      - interviews
+      summary: Result
+      operationId: result_api_v1_interview_slots__slot_id__result_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: slot_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Slot Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResultIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs:
+    get:
+      tags:
+      - jobs
+      summary: Search Jobs
+      operationId: search_jobs_api_v1_jobs_get
+      parameters:
+      - name: q
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Q
+      - name: role
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Role
+      - name: city
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: City
+      - name: seniority
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Seniority
+      - name: skill
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Skill
+      - name: company_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Company Id
+      - name: cities
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: array
+            items:
+              type: string
+          - type: 'null'
+          title: Cities
+      - name: salary_range
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - enum:
+            - under_10
+            - '10_15'
+            - '15_25'
+            - over_25
+            type: string
+          - type: 'null'
+          title: Salary Range
+      - name: experience
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: array
+            items:
+              enum:
+              - none
+              - under_1
+              - '1_3'
+              - '3_5'
+              - over_5
+              type: string
+          - type: 'null'
+          title: Experience
+      - name: sort
+        in: query
+        required: false
+        schema:
+          enum:
+          - newest
+          - oldest
+          - salary_desc
+          type: string
+          default: newest
+          title: Sort
+      - name: page
+        in: query
+        required: false
+        schema:
+          type: integer
+          minimum: 1
+          default: 1
+          title: Page
+      - name: size
+        in: query
+        required: false
+        schema:
+          type: integer
+          maximum: 100
+          minimum: 1
+          default: 20
+          title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    post:
+      tags:
+      - jobs
+      summary: Create Job
+      operationId: create_job_api_v1_jobs_post
+      security:
+      - HTTPBearer: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JobIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/quota:
+    get:
+      tags:
+      - jobs
+      summary: Quota
+      operationId: quota_api_v1_jobs_quota_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/jobs/owned:
+    get:
+      tags:
+      - jobs
+      summary: My Jobs
+      operationId: my_jobs_api_v1_jobs_owned_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/jobs/stats:
+    get:
+      tags:
+      - jobs
+      summary: Stats
+      operationId: stats_api_v1_jobs_stats_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/jobs/{job_id}:
+    get:
+      tags:
+      - jobs
+      summary: Job Detail
+      operationId: job_detail_api_v1_jobs__job_id__get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    put:
+      tags:
+      - jobs
+      summary: Update Job
+      operationId: update_job_api_v1_jobs__job_id__put
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JobIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/manage:
+    get:
+      tags:
+      - jobs
+      summary: Get Job
+      operationId: get_job_api_v1_jobs__job_id__manage_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/status:
+    patch:
+      tags:
+      - jobs
+      summary: Change Status
+      operationId: change_status_api_v1_jobs__job_id__status_patch
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/JobStatusIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/candidates:
+    get:
+      tags:
+      - jobs
+      summary: Recommended Candidates
+      operationId: recommended_candidates_api_v1_jobs__job_id__candidates_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          default: 30
+          title: Limit
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/invite:
+    post:
+      tags:
+      - jobs
+      summary: Invite Candidate
+      operationId: invite_candidate_api_v1_jobs__job_id__invite_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InviteIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/jobs/{job_id}/interview-slots:
+    get:
+      tags:
+      - jobs
+      summary: Job Slots
+      operationId: job_slots_api_v1_jobs__job_id__interview_slots_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    post:
+      tags:
+      - jobs
+      summary: Add Slots
+      operationId: add_slots_api_v1_jobs__job_id__interview_slots_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SlotsIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/matching/gap:
+    get:
+      tags:
+      - matching
+      summary: Gap
+      operationId: gap_api_v1_matching_gap_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: query
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      - name: job_id
+        in: query
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/matching/cv-evaluation:
+    get:
+      tags:
+      - matching
+      summary: Cv Evaluation
+      operationId: cv_evaluation_api_v1_matching_cv_evaluation_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: query
+        required: true
+        schema:
+          type: integer
+          title: Cv Id
+      - name: job_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Job Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/matching/jobs:
+    get:
+      tags:
+      - matching
+      summary: Recommendations
+      operationId: recommendations_api_v1_matching_jobs_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: cv_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Cv Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/matching/jobs/{job_id}/match:
+    get:
+      tags:
+      - matching
+      summary: Match One
+      operationId: match_one_api_v1_matching_jobs__job_id__match_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Job Id
+      - name: cv_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Cv Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/metadata:
+    get:
+      tags:
+      - metadata
+      summary: Meta
+      operationId: meta_api_v1_metadata_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /api/v1/notifications:
+    get:
+      tags:
+      - notifications
+      summary: List Notifications
+      operationId: list_notifications_api_v1_notifications_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/notifications/read-all:
+    post:
+      tags:
+      - notifications
+      summary: Read All
+      operationId: read_all_api_v1_notifications_read_all_post
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/packages:
+    get:
+      tags:
+      - payments
+      summary: Packages
+      operationId: packages_api_v1_packages_get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: target
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Target
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/orders:
+    get:
+      tags:
+      - payments
+      summary: My Orders
+      operationId: my_orders_api_v1_orders_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    post:
+      tags:
+      - payments
+      summary: New Order
+      operationId: new_order_api_v1_orders_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/dev/simulate-payment:
+    post:
+      tags:
+      - payments
+      summary: Simulate
+      operationId: simulate_api_v1_dev_simulate_payment_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulateIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/orders/{order_id}:
+    get:
+      tags:
+      - payments
+      summary: Get Order
+      operationId: get_order_api_v1_orders__order_id__get
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Order Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/orders/{order_id}/cancel:
+    post:
+      tags:
+      - payments
+      summary: Cancel Order
+      operationId: cancel_order_api_v1_orders__order_id__cancel_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Order Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/orders/{order_id}/demo-payment:
+    post:
+      tags:
+      - payments
+      summary: Demo Payment
+      operationId: demo_payment_api_v1_orders__order_id__demo_payment_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Order Id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              anyOf:
+              - $ref: '#/components/schemas/DemoPaymentIn'
+              - type: 'null'
+              title: Body
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/orders/{order_id}/refund:
+    post:
+      tags:
+      - payments
+      summary: Refund
+      operationId: refund_api_v1_orders__order_id__refund_post
+      security:
+      - HTTPBearer: []
+      parameters:
+      - name: order_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: Order Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefundIn'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/reports:
+    post:
+      tags:
+      - reports
+      summary: Create
+      operationId: create_api_v1_reports_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReportIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/reports/mine:
+    get:
+      tags:
+      - reports
+      summary: Mine
+      operationId: mine_api_v1_reports_mine_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+  /api/v1/users/me:
+    get:
+      tags:
+      - users
+      summary: Me
+      operationId: me_api_v1_users_me_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    put:
+      tags:
+      - users
+      summary: Update Me
+      operationId: update_me_api_v1_users_me_put
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProfileIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/users/me/avatar:
+    post:
+      tags:
+      - users
+      summary: Upload Avatar
+      operationId: upload_avatar_api_v1_users_me_avatar_post
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Body_upload_avatar_api_v1_users_me_avatar_post'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/users/me/profile:
+    get:
+      tags:
+      - users
+      summary: My Profile
+      operationId: my_profile_api_v1_users_me_profile_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+      security:
+      - HTTPBearer: []
+    put:
+      tags:
+      - users
+      summary: Update Profile
+      operationId: update_profile_api_v1_users_me_profile_put
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CandidateProfileIn'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      security:
+      - HTTPBearer: []
+  /api/v1/users/{user_id}/avatar:
+    get:
+      tags:
+      - users
+      summary: Avatar
+      operationId: avatar_api_v1_users__user_id__avatar_get
+      parameters:
+      - name: user_id
+        in: path
+        required: true
+        schema:
+          type: integer
+          title: User Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/webhooks/sepay:
+    post:
+      tags:
+      - webhooks
+      summary: Sepay Webhook
+      operationId: sepay_webhook_api_v1_webhooks_sepay_post
+      parameters:
+      - name: authorization
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Authorization
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/health:
+    get:
+      tags:
+      - health
+      summary: Health
+      operationId: health_api_v1_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+components:
+  schemas:
+    ApplyIn:
+      properties:
+        job_id:
+          type: integer
+          title: Job Id
+        cv_id:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Cv Id
+        cover_letter:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Cover Letter
+      type: object
+      required:
+      - job_id
+      title: ApplyIn
+    AssignIn:
+      properties:
+        order_code:
+          type: string
+          maxLength: 40
+          minLength: 3
+          title: Order Code
+      type: object
+      required:
+      - order_code
+      title: AssignIn
+    Body_upload_avatar_api_v1_users_me_avatar_post:
+      properties:
+        file:
+          type: string
+          contentMediaType: application/octet-stream
+          title: File
+      type: object
+      required:
+      - file
+      title: Body_upload_avatar_api_v1_users_me_avatar_post
+    Body_upload_cv_api_v1_cvs_post:
+      properties:
+        file:
+          anyOf:
+          - type: string
+            contentMediaType: application/octet-stream
+          - type: 'null'
+          title: File
+        text:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Text
+        title:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Title
+      type: object
+      title: Body_upload_cv_api_v1_cvs_post
+    Body_upload_logo_api_v1_companies_me_logo_post:
+      properties:
+        file:
+          type: string
+          contentMediaType: application/octet-stream
+          title: File
+      type: object
+      required:
+      - file
+      title: Body_upload_logo_api_v1_companies_me_logo_post
+    CVUpdate:
+      properties:
+        title:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Title
+        skills:
+          anyOf:
+          - items:
+              type: string
+            type: array
+          - type: 'null'
+          title: Skills
+        years:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Years
+        role:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Role
+        is_default:
+          anyOf:
+          - type: boolean
+          - type: 'null'
+          title: Is Default
+      type: object
+      title: CVUpdate
+    CancelIn:
+      properties:
+        reason:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Reason
+      type: object
+      title: CancelIn
+    CandidateProfileIn:
+      properties:
+        headline:
+          anyOf:
+          - type: string
+            maxLength: 300
+          - type: 'null'
+          title: Headline
+        summary:
+          anyOf:
+          - type: string
+            maxLength: 5000
+          - type: 'null'
+          title: Summary
+        location:
+          anyOf:
+          - type: string
+            maxLength: 100
+          - type: 'null'
+          title: Location
+        desired_role:
+          anyOf:
+          - type: string
+            maxLength: 200
+          - type: 'null'
+          title: Desired Role
+        expected_salary:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Expected Salary
+        is_public:
+          type: boolean
+          title: Is Public
+          default: true
+      type: object
+      title: CandidateProfileIn
+    CompanyIn:
+      properties:
+        name:
+          type: string
+          title: Name
+        description:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Description
+        location:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Location
+        website:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Website
+        logo_url:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Logo Url
+      type: object
+      required:
+      - name
+      title: CompanyIn
+    DemoPaymentIn:
+      properties:
+        amount:
+          anyOf:
+          - type: integer
+            exclusiveMinimum: 0.0
+          - type: 'null'
+          title: Amount
+      type: object
+      title: DemoPaymentIn
+    ForgotPasswordIn:
+      properties:
+        email:
+          type: string
+          format: email
+          title: Email
+      type: object
+      required:
+      - email
+      title: ForgotPasswordIn
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    HoldIn:
+      properties:
+        application_id:
+          type: integer
+          title: Application Id
+      type: object
+      required:
+      - application_id
+      title: HoldIn
+    InviteIn:
+      properties:
+        candidate_id:
+          type: integer
+          title: Candidate Id
+        message:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Message
+      type: object
+      required:
+      - candidate_id
+      title: InviteIn
+    JobIn:
+      properties:
+        title:
+          type: string
+          minLength: 3
+          title: Title
+        description:
+          type: string
+          minLength: 30
+          title: Description
+        skills:
+          anyOf:
+          - items:
+              type: string
+            type: array
+          - type: 'null'
+          title: Skills
+        min_years:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Min Years
+        seniority:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Seniority
+        role:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Role
+        city:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: City
+        salary_min:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Salary Min
+        salary_max:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Salary Max
+        expires_in_days:
+          type: integer
+          title: Expires In Days
+          default: 30
+        submit:
+          type: boolean
+          title: Submit
+          default: true
+      type: object
+      required:
+      - title
+      - description
+      title: JobIn
+    JobStatusIn:
+      properties:
+        status:
+          type: string
+          enum:
+          - CLOSED
+          - PENDING
+          title: Status
+        expires_in_days:
+          anyOf:
+          - type: integer
+            maximum: 90.0
+            minimum: 1.0
+          - type: 'null'
+          title: Expires In Days
+      type: object
+      required:
+      - status
+      title: JobStatusIn
+    LoginIn:
+      properties:
+        email:
+          type: string
+          format: email
+          title: Email
+        password:
+          type: string
+          title: Password
+      type: object
+      required:
+      - email
+      - password
+      title: LoginIn
+    OrderIn:
+      properties:
+        package_id:
+          type: integer
+          title: Package Id
+      type: object
+      required:
+      - package_id
+      title: OrderIn
+    PackageIn:
+      properties:
+        code:
+          type: string
+          maxLength: 40
+          minLength: 2
+          pattern: ^[A-Z0-9_]+$
+          title: Code
+        name:
+          type: string
+          minLength: 2
+          title: Name
+        target:
+          type: string
+          pattern: ^(HR|CANDIDATE)$
+          title: Target
+        price:
+          type: integer
+          minimum: 1000.0
+          title: Price
+        duration_days:
+          type: integer
+          maximum: 365.0
+          minimum: 1.0
+          title: Duration Days
+        quota_jobs:
+          type: integer
+          minimum: 0.0
+          title: Quota Jobs
+          default: 0
+        description:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Description
+        active:
+          type: boolean
+          title: Active
+          default: true
+      type: object
+      required:
+      - code
+      - name
+      - target
+      - price
+      - duration_days
+      title: PackageIn
+    ProfileIn:
+      properties:
+        full_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Full Name
+        phone:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Phone
+        password:
+          anyOf:
+          - type: string
+            minLength: 6
+          - type: 'null'
+          title: Password
+        current_password:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Current Password
+      type: object
+      title: ProfileIn
+    RefreshIn:
+      properties:
+        refresh_token:
+          type: string
+          minLength: 10
+          title: Refresh Token
+      type: object
+      required:
+      - refresh_token
+      title: RefreshIn
+    RefundDecision:
+      properties:
+        approve:
+          type: boolean
+          title: Approve
+        note:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Note
+      type: object
+      required:
+      - approve
+      title: RefundDecision
+    RefundIn:
+      properties:
+        reason:
+          type: string
+          title: Reason
+      type: object
+      required:
+      - reason
+      title: RefundIn
+    RegisterIn:
+      properties:
+        email:
+          type: string
+          format: email
+          title: Email
+        password:
+          type: string
+          minLength: 6
+          title: Password
+        full_name:
+          type: string
+          minLength: 2
+          title: Full Name
+        phone:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Phone
+        role:
+          type: string
+          pattern: ^(CANDIDATE|HR)$
+          title: Role
+        company_name:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Company Name
+      type: object
+      required:
+      - email
+      - password
+      - full_name
+      - role
+      title: RegisterIn
+    ReportDecision:
+      properties:
+        status:
+          type: string
+          enum:
+          - RESOLVED
+          - DISMISSED
+          title: Status
+        note:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Note
+        action:
+          type: string
+          enum:
+          - NONE
+          - CLOSE_JOB
+          - LOCK_USER
+          title: Action
+          default: NONE
+      type: object
+      required:
+      - status
+      title: ReportDecision
+    ReportIn:
+      properties:
+        target_type:
+          type: string
+          enum:
+          - JOB
+          - COMPANY
+          - USER
+          title: Target Type
+        target_id:
+          type: integer
+          title: Target Id
+        reason:
+          type: string
+          maxLength: 2000
+          minLength: 10
+          title: Reason
+      type: object
+      required:
+      - target_type
+      - target_id
+      - reason
+      title: ReportIn
+    ResetPasswordIn:
+      properties:
+        token:
+          type: string
+          minLength: 10
+          title: Token
+        password:
+          type: string
+          minLength: 6
+          title: Password
+      type: object
+      required:
+      - token
+      - password
+      title: ResetPasswordIn
+    ResultIn:
+      properties:
+        result:
+          type: string
+          title: Result
+        feedback:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Feedback
+      type: object
+      required:
+      - result
+      title: ResultIn
+    SimulateIn:
+      properties:
+        order_id:
+          type: integer
+          title: Order Id
+        amount:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Amount
+        tx_id:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Tx Id
+      type: object
+      required:
+      - order_id
+      title: SimulateIn
+    SlotsIn:
+      properties:
+        start_at:
+          type: string
+          format: date-time
+          title: Start At
+        end_at:
+          type: string
+          format: date-time
+          title: End At
+        minutes:
+          type: integer
+          title: Minutes
+          default: 30
+        location:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Location
+      type: object
+      required:
+      - start_at
+      - end_at
+      title: SlotsIn
+    StatusIn:
+      properties:
+        status:
+          type: string
+          title: Status
+        note:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Note
+      type: object
+      required:
+      - status
+      title: StatusIn
+    TokenIn:
+      properties:
+        token:
+          type: string
+          minLength: 10
+          title: Token
+      type: object
+      required:
+      - token
+      title: TokenIn
+    TransitionIn:
+      properties:
+        to:
+          type: string
+          title: To
+        note:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Note
+      type: object
+      required:
+      - to
+      title: TransitionIn
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+  securitySchemes:
+    HTTPBearer:
+      type: http
+      scheme: bearer

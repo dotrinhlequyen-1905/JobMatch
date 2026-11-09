@@ -1,0 +1,132 @@
+{
+"fig_agreement": [
+"figures/fig_agreement.png",
+1580,
+760
+],
+"fig_ai_pipeline": [
+"figures/fig_ai_pipeline.png",
+1920,
+1107
+],
+"fig_app_state": [
+"figures/fig_app_state.png",
+1920,
+860
+],
+"fig_architecture": [
+"figures/fig_architecture.png",
+1920,
+1168
+],
+"fig_data_stats": [
+"figures/fig_data_stats.png",
+2400,
+920
+],
+"fig_erd": [
+"figures/fig_erd.png",
+1920,
+1266
+],
+"fig_matching": [
+"figures/fig_matching.png",
+1920,
+1045
+],
+"fig_payment_flow": [
+"figures/fig_payment_flow.png",
+1920,
+1076
+],
+"fig_results": [
+"figures/fig_results.png",
+2016,
+865
+],
+"fig_slot_flow": [
+"figures/fig_slot_flow.png",
+1920,
+799
+],
+"fig_split": [
+"figures/fig_split.png",
+1920,
+706
+],
+"fig_training": [
+"figures/fig_training.png",
+1681,
+635
+],
+"fig_usecases": [
+"figures/fig_usecases.png",
+1920,
+1014
+],
+"01_home": [
+"screens/01_home.png",
+1366,
+900
+],
+"03_candidate_recommendations": [
+"screens/03_candidate_recommendations.png",
+1366,
+900
+],
+"04_candidate_cv_parsed": [
+"screens/04_candidate_cv_parsed.png",
+1366,
+860
+],
+"05_candidate_job_match": [
+"screens/05_candidate_job_match.png",
+1366,
+820
+],
+"06_hr_dashboard": [
+"screens/06_hr_dashboard.png",
+1366,
+700
+],
+"07_hr_application_detail": [
+"screens/07_hr_application_detail.png",
+1366,
+860
+],
+"08_hr_ai_candidates": [
+"screens/08_hr_ai_candidates.png",
+1366,
+820
+],
+"10_candidate_slot_held": [
+"screens/10_candidate_slot_held.png",
+1366,
+620
+],
+"12_checkout_qr": [
+"screens/12_checkout_qr.png",
+1366,
+620
+],
+"14_admin_dashboard": [
+"screens/14_admin_dashboard.png",
+1366,
+640
+],
+"15_admin_reconcile": [
+"screens/15_admin_reconcile.png",
+1366,
+640
+],
+"mobile_menu_open": [
+"screens/mobile_menu_open.png",
+390,
+700
+],
+"mobile_recommendations": [
+"screens/mobile_recommendations.png",
+390,
+844
+]
+}

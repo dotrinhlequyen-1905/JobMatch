@@ -1,0 +1,87 @@
+{
+ "job_id": "J00071",
+ "specs": [
+  {
+   "id": "fit_vi",
+   "role_display": "Lập trình viên Backend",
+   "seniority": "lead",
+   "years": 9,
+   "lang": "vi",
+   "skills": [
+    "Spring",
+    "SQL",
+    "CI/CD",
+    "Linux",
+    "Microservices",
+    "Node.js",
+    "Java",
+    "PostgreSQL",
+    "Oracle",
+    "AWS"
+   ],
+   "note": "Ứng viên rất phù hợp với JD."
+  },
+  {
+   "id": "senior_gap_en",
+   "role_display": "Backend Developer",
+   "seniority": "junior",
+   "years": 6,
+   "lang": "en",
+   "skills": [
+    "Java",
+    "SQL",
+    "AWS",
+    "Microservices",
+    "CI/CD",
+    "Oracle",
+    "PostgreSQL",
+    "Linux"
+   ],
+   "note": "Đủ kỹ năng nhưng thiếu kinh nghiệm so với JD."
+  }
+ ],
+ "cases": [
+  {
+   "id": "case1",
+   "job_id": "J00510",
+   "cv_id": "C04452",
+   "rule_label": 0,
+   "bucket": "0diff"
+  },
+  {
+   "id": "case2",
+   "job_id": "J01320",
+   "cv_id": "C04140",
+   "rule_label": 1,
+   "bucket": "1"
+  },
+  {
+   "id": "case3",
+   "job_id": "J00745",
+   "cv_id": "C01247",
+   "rule_label": 1,
+   "bucket": "1"
+  },
+  {
+   "id": "case4",
+   "job_id": "J00138",
+   "cv_id": "C00414",
+   "rule_label": 2,
+   "bucket": "2"
+  },
+  {
+   "id": "case5",
+   "job_id": "J00276",
+   "cv_id": "C00828",
+   "rule_label": 2,
+   "bucket": "2"
+  },
+  {
+   "id": "case6",
+   "job_id": "J00774",
+   "cv_id": "C01086",
+   "rule_label": 0,
+   "bucket": "0same"
+  }
+ ]
+}

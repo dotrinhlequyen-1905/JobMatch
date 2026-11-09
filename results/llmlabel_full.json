@@ -1,0 +1,26 @@
+{
+ "labels": "llm",
+ "text": "full",
+ "results": {
+  "bm25": {
+   "ndcg@10": 0.7583,
+   "p@3": 0.6,
+   "pair_acc": 0.707
+  },
+  "e5-base": {
+   "ndcg@10": 0.7744,
+   "p@3": 0.6333,
+   "pair_acc": 0.7533
+  },
+  "models/cvjd-e5-base-full-clean": {
+   "ndcg@10": 0.9366,
+   "p@3": 0.8533,
+   "pair_acc": 0.9309
+  },
+  "models/cvjd-e5-base-full-clean+hybrid": {
+   "ndcg@10": 0.9857,
+   "p@3": 0.9,
+   "pair_acc": 0.9482
+  }
+ }
+}

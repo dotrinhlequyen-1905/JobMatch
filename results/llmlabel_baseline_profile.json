@@ -1,0 +1,26 @@
+{
+ "labels": "llm",
+ "text": "profile",
+ "results": {
+  "bm25": {
+   "ndcg@10": 0.9212,
+   "p@3": 0.84,
+   "pair_acc": 0.9128
+  },
+  "skill": {
+   "ndcg@10": 0.9788,
+   "p@3": 0.88,
+   "pair_acc": 0.9403
+  },
+  "e5-base": {
+   "ndcg@10": 0.922,
+   "p@3": 0.8467,
+   "pair_acc": 0.9214
+  },
+  "e5-base+hybrid": {
+   "ndcg@10": 0.9835,
+   "p@3": 0.9067,
+   "pair_acc": 0.967
+  }
+ }
+}

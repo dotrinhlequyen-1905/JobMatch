@@ -1,0 +1,46 @@
+{
+ "labels": "llm",
+ "text": "profile",
+ "results": {
+  "bm25": {
+   "ndcg@10": 0.9212,
+   "p@3": 0.84,
+   "pair_acc": 0.9128
+  },
+  "skill": {
+   "ndcg@10": 0.9788,
+   "p@3": 0.88,
+   "pair_acc": 0.9403
+  },
+  "e5-base": {
+   "ndcg@10": 0.922,
+   "p@3": 0.8467,
+   "pair_acc": 0.9214
+  },
+  "e5-base+hybrid": {
+   "ndcg@10": 0.9835,
+   "p@3": 0.9067,
+   "pair_acc": 0.967
+  },
+  "models/cvjd-e5-base-profile": {
+   "ndcg@10": 0.972,
+   "p@3": 0.8733,
+   "pair_acc": 0.956
+  },
+  "models/cvjd-e5-base-profile+hybrid": {
+   "ndcg@10": 0.9843,
+   "p@3": 0.8933,
+   "pair_acc": 0.9505
+  },
+  "models/cvjd-e5-base-profile-clean": {
+   "ndcg@10": 0.9722,
+   "p@3": 0.8733,
+   "pair_acc": 0.9576
+  },
+  "models/cvjd-e5-base-profile-clean+hybrid": {
+   "ndcg@10": 0.9835,
+   "p@3": 0.8933,
+   "pair_acc": 0.9505
+  }
+ }
+}

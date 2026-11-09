@@ -1,0 +1,38 @@
+{
+ "bm25": {
+  "ndcg@10": 0.5044,
+  "mrr@10": 0.39,
+  "recall@20": 0.7283,
+  "recall@50": 0.8569
+ },
+ "skill": {
+  "ndcg@10": 0.7912,
+  "mrr@10": 0.6117,
+  "recall@20": 0.9368,
+  "recall@50": 0.9914
+ },
+ "e5-base": {
+  "ndcg@10": 0.5958,
+  "mrr@10": 0.4211,
+  "recall@20": 0.8517,
+  "recall@50": 0.9499
+ },
+ "e5-base+hybrid": {
+  "ndcg@10": 0.8606,
+  "mrr@10": 0.6401,
+  "recall@20": 0.9576,
+  "recall@50": 0.9924
+ },
+ "models/cvjd-e5-base-profile-clean": {
+  "ndcg@10": 0.8077,
+  "mrr@10": 0.5904,
+  "recall@20": 0.9354,
+  "recall@50": 0.9814
+ },
+ "models/cvjd-e5-base-profile-clean+hybrid": {
+  "ndcg@10": 0.8485,
+  "mrr@10": 0.6407,
+  "recall@20": 0.9597,
+  "recall@50": 0.992
+ }
+}

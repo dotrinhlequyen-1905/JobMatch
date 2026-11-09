@@ -1,20 +1,37 @@
-﻿name: Backend CI
-
+name: Backend CI
 on:
   push:
-    paths: ['backend/**']
+    paths: ['backend/**', 'data_pipeline/**', '.github/workflows/backend-ci.yml']
   pull_request:
-    paths: ['backend/**']
-
+    paths: ['backend/**', 'data_pipeline/**', '.github/workflows/backend-ci.yml']
 jobs:
   test:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_DB: recruit_ai_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      TEST_DATABASE_URL: postgresql+psycopg://postgres:postgres@localhost:5432/recruit_ai_test
+      DATABASE_URL: postgresql+psycopg://postgres:postgres@localhost:5432/recruit_ai_test
+      EMBED_MODEL: hashing
+      CROSS_ENCODER_MODEL: ''
+      TASK_ALWAYS_EAGER: 'true'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - run: pip install -e '.[dev]'
-        working-directory: backend
-      - run: pytest
+          python-version: '3.12'
+      - run: pip install -e './backend[dev]'
+      - run: alembic -c backend/alembic.ini upgrade head
+      - run: ruff check backend/app
+      - run: python scripts/export_api.py --check
+      - run: pytest -q
         working-directory: backend

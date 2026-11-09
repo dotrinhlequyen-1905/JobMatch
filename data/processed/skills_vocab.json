@@ -1,0 +1,4084 @@
+{
+ "skills": [
+  "JavaScript",
+  "Java",
+  "Git",
+  "React",
+  "Python",
+  "AWS",
+  "Docker",
+  "RESTful API",
+  "CI/CD",
+  "PostgreSQL",
+  "HTML/CSS",
+  "SQL",
+  "Agile/Scrum",
+  "MySQL",
+  "Node.js",
+  "TypeScript",
+  "Kubernetes",
+  "C#",
+  "Microservices",
+  "MongoDB",
+  "Spring Boot",
+  "Azure",
+  "Redis",
+  "GCP",
+  "Jira",
+  "PHP",
+  "Kafka",
+  "Angular",
+  "Vue.js",
+  ".NET",
+  "Go",
+  "C++",
+  "Oracle",
+  "Next.js",
+  "Spring",
+  "Linux",
+  "SQL Server",
+  "Kotlin",
+  "Jenkins",
+  "Flutter",
+  "C",
+  "React Native",
+  "Laravel",
+  "Swift",
+  "Elasticsearch",
+  "Hibernate",
+  "TensorFlow",
+  "PyTorch",
+  "Selenium",
+  "Unity",
+  "Ruby",
+  "Redux",
+  "Dart",
+  "RabbitMQ",
+  "Confluence",
+  "Terraform",
+  "Postman",
+  "NestJS",
+  "Grafana",
+  "Figma",
+  "GraphQL",
+  "Webpack",
+  "Bootstrap",
+  "NoSQL",
+  "Express.js",
+  "Entity Framework",
+  "FastAPI",
+  "Spark",
+  "Tailwind CSS",
+  "Playwright",
+  "Django",
+  "Prometheus",
+  "jQuery",
+  "Firebase",
+  "Airflow",
+  "Flask",
+  "DevOps",
+  "Ansible",
+  "GitHub Actions",
+  "Maven",
+  "Android",
+  "Objective-C",
+  "Blockchain",
+  "Jest",
+  "Odoo",
+  "Rust",
+  "Hadoop",
+  "WordPress",
+  "Appium",
+  "Bash",
+  "WPF",
+  "JUnit",
+  "gRPC",
+  "Cypress",
+  "SOAP",
+  "Ruby on Rails",
+  "Gradle",
+  "Machine Learning",
+  "WebSocket",
+  "Scala",
+  "SVN",
+  "Nginx",
+  "PL/SQL",
+  "MariaDB",
+  "Power BI",
+  "Azure DevOps",
+  "JMeter",
+  "MVC",
+  "OpenCV",
+  "LangChain",
+  "Databricks",
+  "Android Studio",
+  "SASS",
+  "JSP",
+  "Web3",
+  "iOS",
+  "Vite",
+  "Scikit-learn",
+  "Unreal Engine",
+  "Nuxt.js",
+  "Tableau",
+  "GitLab CI",
+  "Keras",
+  "RTOS",
+  "SwiftUI",
+  "MVVM",
+  "Active Directory",
+  "Xcode",
+  "SIEM",
+  "IoT",
+  "Firewall",
+  "Solidity",
+  "ETL",
+  "Pandas",
+  "MQTT",
+  "CodeIgniter",
+  "PowerShell",
+  "Adobe XD",
+  "Celery",
+  "Ant Design",
+  "Visual Studio",
+  "JPA",
+  "UIKit",
+  "TCP/IP",
+  "Waterfall",
+  "Windows Server",
+  "VMware",
+  "Salesforce",
+  "Babel",
+  "Embedded Linux",
+  "SQLite",
+  "AUTOSAR",
+  "Redmine",
+  "Swagger",
+  "C/C++",
+  "TestRail",
+  "Symfony",
+  "Splunk",
+  "Realm",
+  "PLC",
+  "Robot Framework",
+  "Automation Testing",
+  "Cassandra",
+  "Unix",
+  "Datadog",
+  "Jetpack Compose",
+  "MobX",
+  "Struts",
+  "Quarkus",
+  "Apache",
+  "Illustrator",
+  "VB.NET",
+  "Zabbix",
+  "Big Data",
+  "Shopify",
+  "CloudFormation",
+  "UML",
+  "SPI",
+  "Sentry",
+  "CircleCI",
+  "Mocha",
+  "LlamaIndex",
+  "Spring Cloud",
+  "I2C",
+  "OAuth2",
+  "Nexus",
+  "JWT",
+  "IDS/IPS",
+  "ITIL",
+  "Yocto",
+  "HMI",
+  "MyBatis",
+  "Cucumber",
+  "Deep Learning",
+  "ELK Stack",
+  "Microsoft 365",
+  "GitLab CI/CD",
+  "Sketch",
+  "SonarQube",
+  "DynamoDB",
+  "GDB",
+  "MES",
+  "VPN",
+  "Katalon",
+  "OpenAPI Specification",
+  "Prisma",
+  "AI/ML",
+  "Websocket",
+  "IAM",
+  "SAP",
+  "R",
+  "Automation",
+  "SAFe Agile",
+  "Miro",
+  "Material UI",
+  "dbt",
+  "WinForms",
+  "BigQuery",
+  "MLOps",
+  "Security",
+  "Power Automate",
+  "Microsoft Teams",
+  "Excel",
+  "MFC",
+  "Gulp",
+  "Database",
+  "Android SDK",
+  "UiPath",
+  "SQLAlchemy",
+  "Elementor",
+  "Java Spring Boot",
+  "NPM",
+  "S3",
+  "Google Analytics",
+  "AJAX",
+  "CAN",
+  "Coroutines",
+  "ESLint",
+  "Proxmox",
+  "n8n",
+  "CakePHP",
+  "Google Workspace",
+  "NIST",
+  "UART",
+  "Talend",
+  "Mitsubishi",
+  "RxJS",
+  "LESS",
+  "Redux-Saga",
+  "Coroutine",
+  "Apex",
+  "Ubuntu",
+  "Continuous Integration",
+  "Dapper",
+  "BLE",
+  "DB2",
+  "Eclipse",
+  "Circle CI",
+  "Embedded Systems",
+  "Looker Studio",
+  "Iceberg",
+  "DevSecOps",
+  "Ethers.js",
+  "Flow",
+  "Visio",
+  "Snowflake",
+  "Fastlane",
+  "FFmpeg",
+  "WebRTC",
+  "ServiceNow",
+  "OpenAI API",
+  "LLM",
+  "Zephyr",
+  "Network Security",
+  "API testing",
+  "Dremio",
+  "Cloudflare",
+  "Server",
+  "TeamCity",
+  "Microsoft Office",
+  "React Hooks",
+  "Android Jetpack",
+  "Hugging Face",
+  "Drupal",
+  "RxSwift",
+  "Swift Package Manager",
+  "Microsoft Dynamics",
+  "Hive",
+  "Spring Security",
+  "Ionic",
+  "OpenSearch",
+  "Combine",
+  "NetSuite",
+  "API Gateway",
+  "WebGL",
+  "Apache Flink",
+  "Serverless",
+  "Room",
+  "Ethernet",
+  "Revit",
+  "Google Maps",
+  "Microcontrollers",
+  "React Testing Library",
+  "Omron",
+  "NHibernate",
+  "SOAR",
+  "OpenGL",
+  "SAP Business Object",
+  "Ethereum",
+  "RxJava",
+  "BI",
+  "CRM",
+  "Espresso",
+  "RS232",
+  "OpenAPI",
+  "Retrofit",
+  "KVM",
+  "Modbus",
+  "RAG",
+  "WAF",
+  "AWS RDS",
+  "Windows 11",
+  "DNS",
+  "IOT",
+  "T-SQL",
+  "InVision",
+  "Styled Components",
+  "ADO.NET",
+  "Electron.js",
+  "Confluent",
+  "Outsystems",
+  "Redshift",
+  "Serenity BDD",
+  "RTP",
+  "Elastic",
+  "GoldenGate",
+  "TestNG",
+  "LAN",
+  "CoreData",
+  "OpenAI",
+  "HTTP",
+  "ISO27001",
+  "Kibana",
+  "WebdriverIO",
+  "GitHub Action",
+  "RS485",
+  "Test Complete",
+  "Manual Testing",
+  "Memcached",
+  "Raspberry Pi",
+  "Zustand",
+  "MinIO",
+  "Powershell",
+  "N8N",
+  "AKS",
+  "Mockito",
+  "Cocos Creator",
+  "Google Meet",
+  "ZK",
+  "Flink",
+  "Data Analysis",
+  "DLP",
+  "NLP",
+  "Computer Vision",
+  "DBT",
+  "SoapUI",
+  "Cisco",
+  "SEO",
+  "Networking",
+  "Wifi",
+  "Design Patterns",
+  "ChatGPT",
+  "Three.js",
+  "Rancher",
+  "Zapier",
+  "Smart Contracts",
+  "RTSP",
+  "CAD/CAM",
+  "Test Driven Development",
+  "SDLC",
+  "BullMQ",
+  "Clean Architecture",
+  "Monitoring",
+  "UDP"
+ ],
+ "freq": {
+  "C#": 280,
+  "Airflow": 28,
+  "Power Automate": 4,
+  "Network Security": 3,
+  "API testing": 3,
+  "Pandas": 8,
+  "Automation Testing": 6,
+  "OAuth2": 5,
+  "Odoo": 20,
+  "Microsoft Teams": 4,
+  "JSP": 11,
+  "Web3": 11,
+  "Nexus": 5,
+  "AWS": 498,
+  "Dremio": 3,
+  "JWT": 5,
+  "Oracle": 114,
+  "jQuery": 30,
+  "Cloudflare": 3,
+  "Server": 3,
+  "TeamCity": 3,
+  "IDS/IPS": 5,
+  "Excel": 4,
+  "Microsoft Office": 3,
+  "React Hooks": 3,
+  "Android Jetpack": 3,
+  "MFC": 4,
+  "ITIL": 5,
+  "Hugging Face": 3,
+  "Drupal": 3,
+  "RxSwift": 3,
+  "Kubernetes": 295,
+  "Gulp": 4,
+  "Embedded Linux": 7,
+  "Dart": 49,
+  "Database": 4,
+  "Scala": 14,
+  "Ruby": 51,
+  "Xcode": 9,
+  "FastAPI": 34,
+  "RabbitMQ": 47,
+  "Yocto": 5,
+  "HMI": 5,
+  "Swift Package Manager": 3,
+  "Microsoft Dynamics": 3,
+  "SQL Server": 99,
+  "Cassandra": 6,
+  "Unix": 6,
+  "Hive": 3,
+  "Spring Security": 3,
+  "Ionic": 3,
+  "MQTT": 8,
+  "OpenSearch": 3,
+  "Combine": 3,
+  "Gradle": 15,
+  "GitLab CI": 10,
+  "SOAP": 16,
+  "MyBatis": 5,
+  "GraphQL": 41,
+  "NestJS": 43,
+  "NetSuite": 3,
+  "Cucumber": 5,
+  "Android SDK": 4,
+  "Grafana": 43,
+  "Laravel": 69,
+  "Spring Boot": 234,
+  "Terraform": 45,
+  "API Gateway": 3,
+  "Spark": 34,
+  "Datadog": 6,
+  "UiPath": 4,
+  "WebGL": 3,
+  "Jira": 188,
+  "Apache Flink": 3,
+  "Serverless": 3,
+  "Room": 3,
+  "SQLAlchemy": 4,
+  "Deep Learning": 5,
+  "Elementor": 4,
+  "Ethernet": 3,
+  "Revit": 3,
+  "Java": 685,
+  "Google Maps": 3,
+  "Microcontrollers": 3,
+  "React Testing Library": 3,
+  "Azure DevOps": 13,
+  "ELK Stack": 5,
+  "iOS": 11,
+  "Omron": 3,
+  "NHibernate": 3,
+  "SOAR": 3,
+  "OpenGL": 3,
+  "Blockchain": 22,
+  "SQLite": 7,
+  "Databricks": 12,
+  "Go": 157,
+  "Jetpack Compose": 6,
+  "Java Spring Boot": 4,
+  "GCP": 209,
+  "Microsoft 365": 5,
+  "NPM": 4,
+  "Bash": 18,
+  "SAP Business Object": 3,
+  "SIEM": 9,
+  "Vite": 11,
+  "Objective-C": 24,
+  "AUTOSAR": 7,
+  "Ethereum": 3,
+  "Scikit-learn": 11,
+  "RxJava": 3,
+  "IoT": 9,
+  "BI": 3,
+  "S3": 4,
+  "Google Analytics": 4,
+  "CRM": 3,
+  "Espresso": 3,
+  "RS232": 3,
+  "OpenAPI": 3,
+  "Retrofit": 3,
+  "CodeIgniter": 8,
+  "KVM": 3,
+  "Modbus": 3,
+  "RAG": 3,
+  "HTML/CSS": 396,
+  "Firewall": 9,
+  "MobX": 6,
+  "Jenkins": 85,
+  "AJAX": 4,
+  "WAF": 3,
+  "Spring": 106,
+  "JMeter": 13,
+  "AWS RDS": 3,
+  "Windows 11": 3,
+  "GitLab CI/CD": 5,
+  "CAN": 4,
+  "Coroutines": 4,
+  "SVN": 14,
+  "DNS": 3,
+  "Struts": 6,
+  "Unity": 52,
+  "Quarkus": 6,
+  "IOT": 3,
+  "Flask": 28,
+  "Confluence": 46,
+  "T-SQL": 3,
+  "Tailwind CSS": 34,
+  "Sketch": 5,
+  "InVision": 3,
+  "ESLint": 4,
+  "Styled Components": 3,
+  "MySQL": 380,
+  "Proxmox": 4,
+  "ADO.NET": 3,
+  "Electron.js": 3,
+  "SonarQube": 5,
+  "PowerShell": 8,
+  "Confluent": 3,
+  "Microservices": 276,
+  "Machine Learning": 15,
+  "PyTorch": 59,
+  "JavaScript": 821,
+  "Playwright": 33,
+  "n8n": 4,
+  "CakePHP": 4,
+  "Redmine": 7,
+  "Outsystems": 3,
+  "Swagger": 7,
+  "MVC": 13,
+  "Google Workspace": 4,
+  "DynamoDB": 5,
+  "Webpack": 41,
+  "NIST": 4,
+  "Redshift": 3,
+  "Serenity BDD": 3,
+  "RTP": 3,
+  "UART": 4,
+  "Elastic": 3,
+  "GDB": 5,
+  "Talend": 4,
+  "Mitsubishi": 4,
+  "GoldenGate": 3,
+  "TestNG": 3,
+  "LAN": 3,
+  "RxJS": 4,
+  "CoreData": 3,
+  "WPF": 18,
+  "OpenAI": 3,
+  "Apache": 6,
+  "HTTP": 3,
+  "ISO27001": 3,
+  "Illustrator": 6,
+  "Adobe XD": 8,
+  "Kibana": 3,
+  "VB.NET": 6,
+  "WebdriverIO": 3,
+  "Kotlin": 88,
+  "LESS": 4,
+  "Postman": 44,
+  "Celery": 8,
+  "GitHub Action": 3,
+  "Solidity": 9,
+  "Ant Design": 8,
+  "Android Studio": 12,
+  "RS485": 3,
+  "Redux-Saga": 4,
+  "MES": 5,
+  "VPN": 5,
+  "Test Complete": 3,
+  "TypeScript": 304,
+  "Coroutine": 4,
+  "Hadoop": 19,
+  "Manual Testing": 3,
+  "Memcached": 3,
+  "Katalon": 5,
+  "ETL": 9,
+  "Unreal Engine": 11,
+  "Raspberry Pi": 3,
+  "WebSocket": 15,
+  "Azure": 229,
+  "Agile/Scrum": 382,
+  "PostgreSQL": 401,
+  "MongoDB": 269,
+  "TensorFlow": 61,
+  "Zabbix": 6,
+  "Zustand": 3,
+  "Apex": 4,
+  "Elasticsearch": 65,
+  "Visual Studio": 8,
+  "OpenAPI Specification": 5,
+  "Firebase": 29,
+  "Ubuntu": 4,
+  "OpenCV": 13,
+  "Nuxt.js": 11,
+  "Prisma": 5,
+  "AI/ML": 5,
+  "Continuous Integration": 4,
+  "RESTful API": 485,
+  "MinIO": 3,
+  "Powershell": 3,
+  "N8N": 3,
+  "Websocket": 5,
+  "AKS": 3,
+  "Angular": 175,
+  "Big Data": 6,
+  "JPA": 8,
+  "Dapper": 4,
+  "Mockito": 3,
+  "WordPress": 19,
+  "Python": 554,
+  "Cocos Creator": 3,
+  "Redis": 213,
+  "IAM": 5,
+  "Ansible": 27,
+  "Google Meet": 3,
+  "SASS": 12,
+  "BLE": 4,
+  "DB2": 4,
+  "Rust": 20,
+  "Shopify": 6,
+  "PHP": 183,
+  "GitHub Actions": 27,
+  "CloudFormation": 6,
+  "UML": 6,
+  "SPI": 6,
+  "C/C++": 7,
+  "UIKit": 8,
+  "TCP/IP": 8,
+  "ZK": 3,
+  "React": 556,
+  "Keras": 10,
+  "Appium": 19,
+  "Eclipse": 4,
+  "Flink": 3,
+  "Flutter": 76,
+  "TestRail": 7,
+  "Nginx": 14,
+  "Symfony": 7,
+  "JUnit": 17,
+  "Waterfall": 8,
+  "Data Analysis": 3,
+  "gRPC": 17,
+  "SAP": 5,
+  "Circle CI": 4,
+  "DLP": 3,
+  "PL/SQL": 14,
+  "Android": 25,
+  "Embedded Systems": 4,
+  "NLP": 3,
+  "Computer Vision": 3,
+  "RTOS": 10,
+  "Splunk": 7,
+  "DBT": 3,
+  "SoapUI": 3,
+  "Looker Studio": 4,
+  "R": 5,
+  "Iceberg": 4,
+  "Ruby on Rails": 16,
+  "DevSecOps": 4,
+  "Entity Framework": 35,
+  "Figma": 43,
+  "Automation": 5,
+  "Linux": 105,
+  "Cisco": 3,
+  "SAFe Agile": 5,
+  "Express.js": 38,
+  "MariaDB": 14,
+  "Sentry": 6,
+  "SwiftUI": 10,
+  "Django": 32,
+  "CI/CD": 419,
+  "SEO": 3,
+  "Realm": 7,
+  "Ethers.js": 4,
+  "Flow": 4,
+  "CircleCI": 6,
+  "Networking": 3,
+  "Visio": 4,
+  "Snowflake": 4,
+  "Kafka": 182,
+  "DevOps": 28,
+  "Fastlane": 4,
+  "PLC": 7,
+  "Windows Server": 8,
+  "MVVM": 10,
+  "FFmpeg": 4,
+  "Wifi": 3,
+  "Miro": 5,
+  "VMware": 8,
+  "Salesforce": 8,
+  "Material UI": 5,
+  "Power BI": 14,
+  "Design Patterns": 3,
+  "ChatGPT": 3,
+  "Bootstrap": 41,
+  ".NET": 160,
+  "React Native": 71,
+  "WebRTC": 4,
+  "Next.js": 107,
+  "Three.js": 3,
+  "Mocha": 6,
+  "Swift": 69,
+  "LlamaIndex": 6,
+  "ServiceNow": 4,
+  "Rancher": 3,
+  "Tableau": 11,
+  "Zapier": 3,
+  "Smart Contracts": 3,
+  "Selenium": 59,
+  "OpenAI API": 4,
+  "dbt": 5,
+  "LLM": 4,
+  "C++": 149,
+  "Maven": 27,
+  "WinForms": 5,
+  "Babel": 8,
+  "LangChain": 13,
+  "NoSQL": 39,
+  "Active Directory": 10,
+  "Spring Cloud": 6,
+  "BigQuery": 5,
+  "MLOps": 5,
+  "Zephyr": 4,
+  "Hibernate": 62,
+  "Redux": 50,
+  "SQL": 392,
+  "Cypress": 17,
+  "C": 75,
+  "Docker": 489,
+  "RTSP": 3,
+  "Robot Framework": 7,
+  "CAD/CAM": 3,
+  "Test Driven Development": 3,
+  "Jest": 21,
+  "SDLC": 3,
+  "BullMQ": 3,
+  "Clean Architecture": 3,
+  "Node.js": 311,
+  "Monitoring": 3,
+  "Vue.js": 171,
+  "Prometheus": 31,
+  "I2C": 6,
+  "Security": 5,
+  "UDP": 3,
+  "Git": 626
+ },
+ "role_skills": {
+  "mobile": [
+   [
+    "Git",
+    62
+   ],
+   [
+    "RESTful API",
+    56
+   ],
+   [
+    "Flutter",
+    53
+   ],
+   [
+    "Swift",
+    52
+   ],
+   [
+    "Kotlin",
+    52
+   ],
+   [
+    "Dart",
+    44
+   ],
+   [
+    "React Native",
+    42
+   ],
+   [
+    "Java",
+    41
+   ],
+   [
+    "CI/CD",
+    39
+   ],
+   [
+    "JavaScript",
+    36
+   ],
+   [
+    "Agile/Scrum",
+    34
+   ],
+   [
+    "Firebase",
+    24
+   ],
+   [
+    "Objective-C",
+    22
+   ],
+   [
+    "TypeScript",
+    17
+   ],
+   [
+    "Jira",
+    15
+   ],
+   [
+    "React",
+    12
+   ],
+   [
+    "Android",
+    12
+   ],
+   [
+    "Android Studio",
+    10
+   ],
+   [
+    "AWS",
+    9
+   ],
+   [
+    "Xcode",
+    8
+   ],
+   [
+    "Node.js",
+    8
+   ],
+   [
+    "SwiftUI",
+    8
+   ],
+   [
+    "UIKit",
+    8
+   ],
+   [
+    "Realm",
+    7
+   ],
+   [
+    "HTML/CSS",
+    7
+   ],
+   [
+    "Redux",
+    7
+   ],
+   [
+    "MVVM",
+    7
+   ],
+   [
+    "Docker",
+    6
+   ],
+   [
+    "Jetpack Compose",
+    6
+   ],
+   [
+    "MongoDB",
+    5
+   ],
+   [
+    "iOS",
+    5
+   ],
+   [
+    "Microservices",
+    5
+   ],
+   [
+    "Confluence",
+    5
+   ],
+   [
+    "Gradle",
+    5
+   ],
+   [
+    "MySQL",
+    5
+   ],
+   [
+    "Coroutine",
+    4
+   ],
+   [
+    "Flow",
+    4
+   ],
+   [
+    "C++",
+    4
+   ],
+   [
+    "GCP",
+    4
+   ],
+   [
+    "Fastlane",
+    4
+   ],
+   [
+    "Coroutines",
+    4
+   ],
+   [
+    "Python",
+    4
+   ],
+   [
+    "SQLite",
+    4
+   ],
+   [
+    "BLE",
+    3
+   ],
+   [
+    "Vue.js",
+    3
+   ],
+   [
+    "Retrofit",
+    3
+   ],
+   [
+    "Room",
+    3
+   ],
+   [
+    "Jenkins",
+    3
+   ],
+   [
+    "RxJava",
+    3
+   ],
+   [
+    "C",
+    3
+   ],
+   [
+    "Figma",
+    3
+   ],
+   [
+    "Combine",
+    3
+   ],
+   [
+    "RxSwift",
+    3
+   ],
+   [
+    "Android SDK",
+    3
+   ],
+   [
+    "Clean Architecture",
+    3
+   ],
+   [
+    "GraphQL",
+    3
+   ],
+   [
+    "Android Jetpack",
+    3
+   ],
+   [
+    "Google Maps",
+    3
+   ],
+   [
+    "CoreData",
+    3
+   ],
+   [
+    "Kubernetes",
+    2
+   ]
+  ],
+  "fullstack": [
+   [
+    "React",
+    196
+   ],
+   [
+    "JavaScript",
+    193
+   ],
+   [
+    "Node.js",
+    107
+   ],
+   [
+    "PostgreSQL",
+    102
+   ],
+   [
+    "Docker",
+    94
+   ],
+   [
+    "AWS",
+    91
+   ],
+   [
+    "MySQL",
+    82
+   ],
+   [
+    "TypeScript",
+    81
+   ],
+   [
+    "Java",
+    71
+   ],
+   [
+    "Git",
+    71
+   ],
+   [
+    "CI/CD",
+    69
+   ],
+   [
+    "Python",
+    68
+   ],
+   [
+    "MongoDB",
+    66
+   ],
+   [
+    "HTML/CSS",
+    65
+   ],
+   [
+    "RESTful API",
+    59
+   ],
+   [
+    "Agile/Scrum",
+    58
+   ],
+   [
+    "Vue.js",
+    52
+   ],
+   [
+    "Microservices",
+    51
+   ],
+   [
+    "Angular",
+    50
+   ],
+   [
+    "Kubernetes",
+    48
+   ],
+   [
+    "SQL",
+    45
+   ],
+   [
+    "Redis",
+    44
+   ],
+   [
+    "Spring Boot",
+    41
+   ],
+   [
+    "GCP",
+    41
+   ],
+   [
+    "PHP",
+    38
+   ],
+   [
+    "Next.js",
+    35
+   ],
+   [
+    "C#",
+    34
+   ],
+   [
+    "Kafka",
+    30
+   ],
+   [
+    "Azure",
+    29
+   ],
+   [
+    ".NET",
+    26
+   ],
+   [
+    "Laravel",
+    21
+   ],
+   [
+    "Go",
+    19
+   ],
+   [
+    "Jira",
+    15
+   ],
+   [
+    "SQL Server",
+    15
+   ],
+   [
+    "Express.js",
+    15
+   ],
+   [
+    "NestJS",
+    15
+   ],
+   [
+    "RabbitMQ",
+    13
+   ],
+   [
+    "Ruby",
+    12
+   ],
+   [
+    "Jenkins",
+    12
+   ],
+   [
+    "Redux",
+    11
+   ],
+   [
+    "Flask",
+    11
+   ],
+   [
+    "Elasticsearch",
+    10
+   ],
+   [
+    "Oracle",
+    10
+   ],
+   [
+    "GraphQL",
+    10
+   ],
+   [
+    "Django",
+    10
+   ],
+   [
+    "Terraform",
+    9
+   ],
+   [
+    "FastAPI",
+    8
+   ],
+   [
+    "Flutter",
+    7
+   ],
+   [
+    "jQuery",
+    7
+   ],
+   [
+    "Bootstrap",
+    7
+   ],
+   [
+    "DevOps",
+    6
+   ],
+   [
+    "NoSQL",
+    6
+   ],
+   [
+    "React Native",
+    6
+   ],
+   [
+    "MariaDB",
+    5
+   ],
+   [
+    "Spring",
+    5
+   ],
+   [
+    "Hibernate",
+    5
+   ],
+   [
+    "SAFe Agile",
+    4
+   ],
+   [
+    "Entity Framework",
+    4
+   ],
+   [
+    "Maven",
+    4
+   ],
+   [
+    "Confluence",
+    4
+   ]
+  ],
+  "frontend": [
+   [
+    "JavaScript",
+    210
+   ],
+   [
+    "React",
+    177
+   ],
+   [
+    "HTML/CSS",
+    159
+   ],
+   [
+    "TypeScript",
+    117
+   ],
+   [
+    "Git",
+    115
+   ],
+   [
+    "RESTful API",
+    82
+   ],
+   [
+    "Vue.js",
+    62
+   ],
+   [
+    "Next.js",
+    50
+   ],
+   [
+    "Angular",
+    46
+   ],
+   [
+    "Agile/Scrum",
+    40
+   ],
+   [
+    "Webpack",
+    34
+   ],
+   [
+    "CI/CD",
+    32
+   ],
+   [
+    "Redux",
+    32
+   ],
+   [
+    "Tailwind CSS",
+    29
+   ],
+   [
+    "Node.js",
+    27
+   ],
+   [
+    "AWS",
+    26
+   ],
+   [
+    "Jira",
+    24
+   ],
+   [
+    "Bootstrap",
+    21
+   ],
+   [
+    "Docker",
+    19
+   ],
+   [
+    "Java",
+    15
+   ],
+   [
+    "Microservices",
+    15
+   ],
+   [
+    "Jest",
+    15
+   ],
+   [
+    "MySQL",
+    14
+   ],
+   [
+    "PostgreSQL",
+    13
+   ],
+   [
+    "SQL",
+    11
+   ],
+   [
+    "GraphQL",
+    11
+   ],
+   [
+    "SASS",
+    11
+   ],
+   [
+    "Figma",
+    10
+   ],
+   [
+    "Vite",
+    10
+   ],
+   [
+    "PHP",
+    9
+   ],
+   [
+    "GCP",
+    8
+   ],
+   [
+    "Kubernetes",
+    8
+   ],
+   [
+    "Ant Design",
+    8
+   ],
+   [
+    "React Native",
+    7
+   ],
+   [
+    "Spring Boot",
+    7
+   ],
+   [
+    "Babel",
+    7
+   ],
+   [
+    "Python",
+    7
+   ],
+   [
+    "C#",
+    6
+   ],
+   [
+    ".NET",
+    6
+   ],
+   [
+    "MobX",
+    6
+   ],
+   [
+    "WordPress",
+    6
+   ],
+   [
+    "Nuxt.js",
+    5
+   ],
+   [
+    "Flutter",
+    5
+   ],
+   [
+    "jQuery",
+    5
+   ],
+   [
+    "MongoDB",
+    5
+   ],
+   [
+    "WebSocket",
+    5
+   ],
+   [
+    "GitHub Actions",
+    4
+   ],
+   [
+    "C++",
+    4
+   ],
+   [
+    "Oracle",
+    4
+   ],
+   [
+    "Azure",
+    4
+   ],
+   [
+    "Playwright",
+    4
+   ],
+   [
+    "Go",
+    4
+   ],
+   [
+    "LESS",
+    4
+   ],
+   [
+    "Laravel",
+    4
+   ],
+   [
+    "Confluence",
+    4
+   ],
+   [
+    "Circle CI",
+    3
+   ],
+   [
+    "Redis",
+    3
+   ],
+   [
+    "Gulp",
+    3
+   ],
+   [
+    "React Testing Library",
+    3
+   ],
+   [
+    "Zustand",
+    3
+   ]
+  ],
+  "software_engineer": [
+   [
+    "Java",
+    156
+   ],
+   [
+    "JavaScript",
+    143
+   ],
+   [
+    "Python",
+    103
+   ],
+   [
+    "Git",
+    98
+   ],
+   [
+    "AWS",
+    85
+   ],
+   [
+    "SQL",
+    81
+   ],
+   [
+    "React",
+    81
+   ],
+   [
+    "RESTful API",
+    76
+   ],
+   [
+    "C#",
+    73
+   ],
+   [
+    "CI/CD",
+    68
+   ],
+   [
+    "HTML/CSS",
+    66
+   ],
+   [
+    "Docker",
+    64
+   ],
+   [
+    "PostgreSQL",
+    60
+   ],
+   [
+    "MySQL",
+    55
+   ],
+   [
+    "Agile/Scrum",
+    53
+   ],
+   [
+    "Microservices",
+    53
+   ],
+   [
+    "Kubernetes",
+    50
+   ],
+   [
+    "Azure",
+    49
+   ],
+   [
+    "Node.js",
+    49
+   ],
+   [
+    ".NET",
+    48
+   ],
+   [
+    "Spring Boot",
+    42
+   ],
+   [
+    "MongoDB",
+    41
+   ],
+   [
+    "PHP",
+    41
+   ],
+   [
+    "C++",
+    40
+   ],
+   [
+    "Angular",
+    37
+   ],
+   [
+    "GCP",
+    36
+   ],
+   [
+    "Spring",
+    27
+   ],
+   [
+    "Kafka",
+    26
+   ],
+   [
+    "SQL Server",
+    26
+   ],
+   [
+    "Redis",
+    25
+   ],
+   [
+    "Go",
+    25
+   ],
+   [
+    "Oracle",
+    25
+   ],
+   [
+    "Vue.js",
+    25
+   ],
+   [
+    "TypeScript",
+    25
+   ],
+   [
+    "Jira",
+    23
+   ],
+   [
+    "Linux",
+    18
+   ],
+   [
+    "C",
+    17
+   ],
+   [
+    "Hibernate",
+    16
+   ],
+   [
+    "WPF",
+    11
+   ],
+   [
+    "Jenkins",
+    11
+   ],
+   [
+    "Elasticsearch",
+    11
+   ],
+   [
+    "NoSQL",
+    11
+   ],
+   [
+    "Next.js",
+    10
+   ],
+   [
+    "Ruby",
+    10
+   ],
+   [
+    "Laravel",
+    10
+   ],
+   [
+    "Entity Framework",
+    9
+   ],
+   [
+    "DevOps",
+    8
+   ],
+   [
+    "Kotlin",
+    8
+   ],
+   [
+    "WordPress",
+    7
+   ],
+   [
+    "React Native",
+    7
+   ],
+   [
+    "TensorFlow",
+    6
+   ],
+   [
+    "Grafana",
+    6
+   ],
+   [
+    "Selenium",
+    6
+   ],
+   [
+    "JSP",
+    6
+   ],
+   [
+    "SOAP",
+    6
+   ],
+   [
+    "PyTorch",
+    5
+   ],
+   [
+    "Terraform",
+    5
+   ],
+   [
+    "Prometheus",
+    5
+   ],
+   [
+    "NestJS",
+    5
+   ],
+   [
+    "RabbitMQ",
+    5
+   ]
+  ],
+  "backend": [
+   [
+    "Java",
+    279
+   ],
+   [
+    "Docker",
+    219
+   ],
+   [
+    "MySQL",
+    187
+   ],
+   [
+    "Git",
+    183
+   ],
+   [
+    "PostgreSQL",
+    180
+   ],
+   [
+    "RESTful API",
+    176
+   ],
+   [
+    "AWS",
+    154
+   ],
+   [
+    "CI/CD",
+    142
+   ],
+   [
+    "JavaScript",
+    140
+   ],
+   [
+    "Spring Boot",
+    137
+   ],
+   [
+    "SQL",
+    136
+   ],
+   [
+    "Microservices",
+    136
+   ],
+   [
+    "Redis",
+    131
+   ],
+   [
+    "Kubernetes",
+    131
+   ],
+   [
+    "MongoDB",
+    124
+   ],
+   [
+    "Python",
+    122
+   ],
+   [
+    "Kafka",
+    97
+   ],
+   [
+    "Node.js",
+    96
+   ],
+   [
+    "Go",
+    79
+   ],
+   [
+    "HTML/CSS",
+    79
+   ],
+   [
+    "C#",
+    78
+   ],
+   [
+    "Agile/Scrum",
+    74
+   ],
+   [
+    "Spring",
+    70
+   ],
+   [
+    "React",
+    68
+   ],
+   [
+    ".NET",
+    66
+   ],
+   [
+    "PHP",
+    65
+   ],
+   [
+    "Azure",
+    59
+   ],
+   [
+    "GCP",
+    52
+   ],
+   [
+    "Oracle",
+    46
+   ],
+   [
+    "Hibernate",
+    41
+   ],
+   [
+    "SQL Server",
+    39
+   ],
+   [
+    "TypeScript",
+    36
+   ],
+   [
+    "Angular",
+    34
+   ],
+   [
+    "Laravel",
+    31
+   ],
+   [
+    "Linux",
+    30
+   ],
+   [
+    "Elasticsearch",
+    27
+   ],
+   [
+    "RabbitMQ",
+    26
+   ],
+   [
+    "Vue.js",
+    25
+   ],
+   [
+    "Entity Framework",
+    21
+   ],
+   [
+    "NestJS",
+    21
+   ],
+   [
+    "Jenkins",
+    20
+   ],
+   [
+    "Jira",
+    20
+   ],
+   [
+    "Express.js",
+    20
+   ],
+   [
+    "NoSQL",
+    19
+   ],
+   [
+    "FastAPI",
+    17
+   ],
+   [
+    "Maven",
+    17
+   ],
+   [
+    "Ruby",
+    17
+   ],
+   [
+    "Django",
+    15
+   ],
+   [
+    "GraphQL",
+    14
+   ],
+   [
+    "jQuery",
+    13
+   ],
+   [
+    "gRPC",
+    11
+   ],
+   [
+    "JUnit",
+    10
+   ],
+   [
+    "Kotlin",
+    10
+   ],
+   [
+    "Ruby on Rails",
+    10
+   ],
+   [
+    "Grafana",
+    9
+   ],
+   [
+    "Next.js",
+    9
+   ],
+   [
+    "Celery",
+    8
+   ],
+   [
+    "SOAP",
+    8
+   ],
+   [
+    "Gradle",
+    8
+   ],
+   [
+    "C++",
+    8
+   ]
+  ],
+  "data_engineer": [
+   [
+    "SQL",
+    40
+   ],
+   [
+    "Python",
+    34
+   ],
+   [
+    "PostgreSQL",
+    21
+   ],
+   [
+    "Airflow",
+    19
+   ],
+   [
+    "AWS",
+    19
+   ],
+   [
+    "Spark",
+    18
+   ],
+   [
+    "Oracle",
+    17
+   ],
+   [
+    "Azure",
+    16
+   ],
+   [
+    "Kafka",
+    15
+   ],
+   [
+    "Java",
+    13
+   ],
+   [
+    "MySQL",
+    13
+   ],
+   [
+    "MongoDB",
+    12
+   ],
+   [
+    "Hadoop",
+    10
+   ],
+   [
+    "GCP",
+    10
+   ],
+   [
+    "ETL",
+    8
+   ],
+   [
+    "Databricks",
+    7
+   ],
+   [
+    "SQL Server",
+    7
+   ],
+   [
+    "Scala",
+    6
+   ],
+   [
+    "PL/SQL",
+    6
+   ],
+   [
+    "Docker",
+    5
+   ],
+   [
+    "Grafana",
+    5
+   ],
+   [
+    "dbt",
+    5
+   ],
+   [
+    "CI/CD",
+    4
+   ],
+   [
+    "Talend",
+    4
+   ],
+   [
+    "Elasticsearch",
+    4
+   ],
+   [
+    "Kubernetes",
+    4
+   ],
+   [
+    "Iceberg",
+    4
+   ],
+   [
+    "Git",
+    3
+   ],
+   [
+    "Power BI",
+    3
+   ],
+   [
+    "Terraform",
+    3
+   ],
+   [
+    "Confluent",
+    3
+   ],
+   [
+    "MinIO",
+    3
+   ],
+   [
+    "Dremio",
+    3
+   ],
+   [
+    "GoldenGate",
+    3
+   ],
+   [
+    "SAP Business Object",
+    3
+   ],
+   [
+    "T-SQL",
+    2
+   ],
+   [
+    "Hive",
+    2
+   ],
+   [
+    "C#",
+    2
+   ],
+   [
+    "Redis",
+    2
+   ],
+   [
+    "Jira",
+    2
+   ],
+   [
+    "Confluence",
+    2
+   ],
+   [
+    "BigQuery",
+    2
+   ],
+   [
+    "AWS RDS",
+    2
+   ],
+   [
+    "Prometheus",
+    2
+   ],
+   [
+    "NoSQL",
+    2
+   ],
+   [
+    "Snowflake",
+    2
+   ],
+   [
+    "DBT",
+    2
+   ],
+   [
+    "Pandas",
+    1
+   ],
+   [
+    "Linux",
+    1
+   ],
+   [
+    "Unix",
+    1
+   ],
+   [
+    "Redshift",
+    1
+   ],
+   [
+    "Sentry",
+    1
+   ],
+   [
+    "Flink",
+    1
+   ],
+   [
+    "Looker Studio",
+    1
+   ],
+   [
+    "RabbitMQ",
+    1
+   ],
+   [
+    "Zabbix",
+    1
+   ],
+   [
+    "MLOps",
+    1
+   ],
+   [
+    "Go",
+    1
+   ],
+   [
+    "C++",
+    1
+   ],
+   [
+    "Jenkins",
+    1
+   ]
+  ],
+  "game": [
+   [
+    "Unity",
+    20
+   ],
+   [
+    "C#",
+    16
+   ],
+   [
+    "Git",
+    13
+   ],
+   [
+    "JavaScript",
+    10
+   ],
+   [
+    "C++",
+    6
+   ],
+   [
+    "CI/CD",
+    5
+   ],
+   [
+    "Unreal Engine",
+    4
+   ],
+   [
+    "Redis",
+    3
+   ],
+   [
+    "TypeScript",
+    3
+   ],
+   [
+    "Android",
+    2
+   ],
+   [
+    "iOS",
+    2
+   ],
+   [
+    "PHP",
+    2
+   ],
+   [
+    "Node.js",
+    2
+   ],
+   [
+    "MySQL",
+    2
+   ],
+   [
+    "MongoDB",
+    2
+   ],
+   [
+    ".NET",
+    2
+   ],
+   [
+    "WebGL",
+    2
+   ],
+   [
+    "Cocos Creator",
+    2
+   ],
+   [
+    "Jira",
+    1
+   ],
+   [
+    "RESTful API",
+    1
+   ],
+   [
+    "WebSocket",
+    1
+   ],
+   [
+    "SQL Server",
+    1
+   ],
+   [
+    "PostgreSQL",
+    1
+   ],
+   [
+    "Python",
+    1
+   ],
+   [
+    "Figma",
+    1
+   ],
+   [
+    "HTML/CSS",
+    1
+   ],
+   [
+    "ChatGPT",
+    1
+   ],
+   [
+    "OpenGL",
+    1
+   ],
+   [
+    "GitHub Actions",
+    1
+   ],
+   [
+    "Android Studio",
+    1
+   ],
+   [
+    "C",
+    1
+   ],
+   [
+    "Design Patterns",
+    1
+   ],
+   [
+    "Agile/Scrum",
+    1
+   ]
+  ],
+  "qa_tester": [
+   [
+    "Selenium",
+    41
+   ],
+   [
+    "JavaScript",
+    37
+   ],
+   [
+    "Jira",
+    37
+   ],
+   [
+    "Agile/Scrum",
+    35
+   ],
+   [
+    "Postman",
+    31
+   ],
+   [
+    "Java",
+    30
+   ],
+   [
+    "Playwright",
+    24
+   ],
+   [
+    "Python",
+    23
+   ],
+   [
+    "SQL",
+    22
+   ],
+   [
+    "Git",
+    19
+   ],
+   [
+    "Jenkins",
+    17
+   ],
+   [
+    "Appium",
+    17
+   ],
+   [
+    "CI/CD",
+    16
+   ],
+   [
+    "TypeScript",
+    14
+   ],
+   [
+    "JMeter",
+    13
+   ],
+   [
+    "Cypress",
+    12
+   ],
+   [
+    "AWS",
+    11
+   ],
+   [
+    "Docker",
+    10
+   ],
+   [
+    "C#",
+    8
+   ],
+   [
+    "Confluence",
+    8
+   ],
+   [
+    "TestRail",
+    7
+   ],
+   [
+    "Azure",
+    6
+   ],
+   [
+    "RESTful API",
+    6
+   ],
+   [
+    "React",
+    5
+   ],
+   [
+    "Cucumber",
+    5
+   ],
+   [
+    "Katalon",
+    5
+   ],
+   [
+    "GitHub Actions",
+    5
+   ],
+   [
+    "Microservices",
+    4
+   ],
+   [
+    "Automation Testing",
+    4
+   ],
+   [
+    "GitLab CI",
+    4
+   ],
+   [
+    "Swagger",
+    4
+   ],
+   [
+    "Robot Framework",
+    4
+   ],
+   [
+    "SoapUI",
+    3
+   ],
+   [
+    "Serenity BDD",
+    3
+   ],
+   [
+    "Kubernetes",
+    3
+   ],
+   [
+    "Figma",
+    3
+   ],
+   [
+    "HTML/CSS",
+    3
+   ],
+   [
+    "Azure DevOps",
+    3
+   ],
+   [
+    "C",
+    3
+   ],
+   [
+    "C++",
+    3
+   ],
+   [
+    "TestNG",
+    2
+   ],
+   [
+    "iOS",
+    2
+   ],
+   [
+    "Android",
+    2
+   ],
+   [
+    "SQL Server",
+    2
+   ],
+   [
+    "ServiceNow",
+    2
+   ],
+   [
+    "AI/ML",
+    2
+   ],
+   [
+    "SDLC",
+    2
+   ],
+   [
+    "Microsoft Teams",
+    2
+   ],
+   [
+    "Ruby",
+    2
+   ],
+   [
+    "Go",
+    2
+   ],
+   [
+    "Elasticsearch",
+    2
+   ],
+   [
+    "Flutter",
+    2
+   ],
+   [
+    "Oracle",
+    2
+   ],
+   [
+    "Power BI",
+    2
+   ],
+   [
+    "API testing",
+    2
+   ],
+   [
+    "React Native",
+    2
+   ],
+   [
+    "Kafka",
+    2
+   ],
+   [
+    "MySQL",
+    2
+   ],
+   [
+    "Mocha",
+    1
+   ],
+   [
+    "Splunk",
+    1
+   ]
+  ],
+  "ai_ml": [
+   [
+    "Python",
+    78
+   ],
+   [
+    "TensorFlow",
+    47
+   ],
+   [
+    "PyTorch",
+    46
+   ],
+   [
+    "AWS",
+    22
+   ],
+   [
+    "GCP",
+    21
+   ],
+   [
+    "Azure",
+    20
+   ],
+   [
+    "Docker",
+    18
+   ],
+   [
+    "C++",
+    17
+   ],
+   [
+    "Git",
+    14
+   ],
+   [
+    "SQL",
+    14
+   ],
+   [
+    "LangChain",
+    11
+   ],
+   [
+    "Keras",
+    10
+   ],
+   [
+    "RESTful API",
+    10
+   ],
+   [
+    "Java",
+    9
+   ],
+   [
+    "C#",
+    9
+   ],
+   [
+    "Scikit-learn",
+    9
+   ],
+   [
+    "FastAPI",
+    8
+   ],
+   [
+    "Kubernetes",
+    8
+   ],
+   [
+    "Flask",
+    7
+   ],
+   [
+    "OpenCV",
+    7
+   ],
+   [
+    "CI/CD",
+    7
+   ],
+   [
+    "Machine Learning",
+    7
+   ],
+   [
+    "LlamaIndex",
+    6
+   ],
+   [
+    "Pandas",
+    6
+   ],
+   [
+    "JavaScript",
+    6
+   ],
+   [
+    "Deep Learning",
+    5
+   ],
+   [
+    "TypeScript",
+    5
+   ],
+   [
+    "Agile/Scrum",
+    4
+   ],
+   [
+    "PostgreSQL",
+    4
+   ],
+   [
+    "R",
+    4
+   ],
+   [
+    "Spark",
+    4
+   ],
+   [
+    "MongoDB",
+    4
+   ],
+   [
+    "MLOps",
+    4
+   ],
+   [
+    "LLM",
+    3
+   ],
+   [
+    "Go",
+    3
+   ],
+   [
+    "Hadoop",
+    3
+   ],
+   [
+    "React",
+    3
+   ],
+   [
+    "NLP",
+    3
+   ],
+   [
+    "C/C++",
+    3
+   ],
+   [
+    "Django",
+    3
+   ],
+   [
+    ".NET",
+    3
+   ],
+   [
+    "Hugging Face",
+    3
+   ],
+   [
+    "RAG",
+    3
+   ],
+   [
+    "Microservices",
+    2
+   ],
+   [
+    "Big Data",
+    2
+   ],
+   [
+    "Jira",
+    2
+   ],
+   [
+    "Node.js",
+    2
+   ],
+   [
+    "Linux",
+    2
+   ],
+   [
+    "n8n",
+    2
+   ],
+   [
+    "Elastic",
+    2
+   ],
+   [
+    "BigQuery",
+    2
+   ],
+   [
+    "Swift",
+    2
+   ],
+   [
+    "Computer Vision",
+    2
+   ],
+   [
+    "N8N",
+    2
+   ],
+   [
+    "OpenAI",
+    2
+   ],
+   [
+    "OpenAI API",
+    2
+   ],
+   [
+    "Redis",
+    1
+   ],
+   [
+    "Zapier",
+    1
+   ],
+   [
+    "Google Analytics",
+    1
+   ],
+   [
+    "Figma",
+    1
+   ]
+  ],
+  "security": [
+   [
+    "Python",
+    10
+   ],
+   [
+    "SIEM",
+    8
+   ],
+   [
+    "AWS",
+    7
+   ],
+   [
+    "GCP",
+    7
+   ],
+   [
+    "Azure",
+    6
+   ],
+   [
+    "Docker",
+    4
+   ],
+   [
+    "IDS/IPS",
+    3
+   ],
+   [
+    "Java",
+    3
+   ],
+   [
+    "WAF",
+    3
+   ],
+   [
+    "SOAR",
+    3
+   ],
+   [
+    "Firewall",
+    3
+   ],
+   [
+    "Go",
+    3
+   ],
+   [
+    "Solidity",
+    3
+   ],
+   [
+    "Blockchain",
+    3
+   ],
+   [
+    "JavaScript",
+    3
+   ],
+   [
+    "Bash",
+    2
+   ],
+   [
+    "ISO27001",
+    2
+   ],
+   [
+    "NIST",
+    2
+   ],
+   [
+    "IAM",
+    2
+   ],
+   [
+    "Active Directory",
+    2
+   ],
+   [
+    "Jira",
+    2
+   ],
+   [
+    "DLP",
+    2
+   ],
+   [
+    "Kubernetes",
+    2
+   ],
+   [
+    "Smart Contracts",
+    2
+   ],
+   [
+    "C#",
+    2
+   ],
+   [
+    "Rust",
+    2
+   ],
+   [
+    "Powershell",
+    1
+   ],
+   [
+    "Agile/Scrum",
+    1
+   ],
+   [
+    "Microservices",
+    1
+   ],
+   [
+    "RESTful API",
+    1
+   ],
+   [
+    "Linux",
+    1
+   ],
+   [
+    "SQL",
+    1
+   ],
+   [
+    "ITIL",
+    1
+   ],
+   [
+    "Kafka",
+    1
+   ],
+   [
+    "PostgreSQL",
+    1
+   ],
+   [
+    "MySQL",
+    1
+   ],
+   [
+    "Ansible",
+    1
+   ],
+   [
+    "VPN",
+    1
+   ],
+   [
+    "ELK Stack",
+    1
+   ],
+   [
+    "PowerShell",
+    1
+   ],
+   [
+    "Node.js",
+    1
+   ]
+  ],
+  "devops_cloud": [
+   [
+    "AWS",
+    43
+   ],
+   [
+    "Docker",
+    38
+   ],
+   [
+    "Python",
+    37
+   ],
+   [
+    "Kubernetes",
+    32
+   ],
+   [
+    "Azure",
+    26
+   ],
+   [
+    "Terraform",
+    22
+   ],
+   [
+    "CI/CD",
+    21
+   ],
+   [
+    "GCP",
+    20
+   ],
+   [
+    "Linux",
+    17
+   ],
+   [
+    "Grafana",
+    17
+   ],
+   [
+    "Git",
+    16
+   ],
+   [
+    "Jenkins",
+    15
+   ],
+   [
+    "Ansible",
+    15
+   ],
+   [
+    "Bash",
+    14
+   ],
+   [
+    "Prometheus",
+    14
+   ],
+   [
+    "Java",
+    10
+   ],
+   [
+    "PostgreSQL",
+    10
+   ],
+   [
+    "Go",
+    10
+   ],
+   [
+    "MySQL",
+    9
+   ],
+   [
+    "Elasticsearch",
+    7
+   ],
+   [
+    "Firewall",
+    6
+   ],
+   [
+    "VMware",
+    6
+   ],
+   [
+    "MongoDB",
+    5
+   ],
+   [
+    "JavaScript",
+    5
+   ],
+   [
+    "Kafka",
+    5
+   ],
+   [
+    "SQL",
+    5
+   ],
+   [
+    "PowerShell",
+    4
+   ],
+   [
+    "Node.js",
+    4
+   ],
+   [
+    "Windows Server",
+    4
+   ],
+   [
+    "Active Directory",
+    4
+   ],
+   [
+    "Microservices",
+    4
+   ],
+   [
+    "Microsoft 365",
+    3
+   ],
+   [
+    "C++",
+    3
+   ],
+   [
+    "C#",
+    3
+   ],
+   [
+    "Jira",
+    3
+   ],
+   [
+    "Zabbix",
+    3
+   ],
+   [
+    "CloudFormation",
+    3
+   ],
+   [
+    "Monitoring",
+    3
+   ],
+   [
+    "VPN",
+    3
+   ],
+   [
+    "RESTful API",
+    3
+   ],
+   [
+    "Redis",
+    3
+   ],
+   [
+    "GitLab CI",
+    3
+   ],
+   [
+    "Cisco",
+    3
+   ],
+   [
+    "DNS",
+    3
+   ],
+   [
+    "Proxmox",
+    3
+   ],
+   [
+    "SQL Server",
+    2
+   ],
+   [
+    "Oracle",
+    2
+   ],
+   [
+    "Splunk",
+    2
+   ],
+   [
+    "ELK Stack",
+    2
+   ],
+   [
+    "Server",
+    2
+   ],
+   [
+    "LAN",
+    2
+   ],
+   [
+    "Wifi",
+    2
+   ],
+   [
+    "Nginx",
+    2
+   ],
+   [
+    "Apache",
+    2
+   ],
+   [
+    "Agile/Scrum",
+    2
+   ],
+   [
+    "Airflow",
+    2
+   ],
+   [
+    "Nexus",
+    2
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "Sentry",
+    2
+   ],
+   [
+    "Unix",
+    2
+   ]
+  ],
+  "business_analyst": [
+   [
+    "Jira",
+    8
+   ],
+   [
+    "Confluence",
+    7
+   ],
+   [
+    "Figma",
+    5
+   ],
+   [
+    "SQL",
+    3
+   ],
+   [
+    "Visio",
+    3
+   ],
+   [
+    "Agile/Scrum",
+    3
+   ],
+   [
+    "Miro",
+    2
+   ],
+   [
+    "Java",
+    2
+   ],
+   [
+    "RESTful API",
+    2
+   ],
+   [
+    "BI",
+    1
+   ],
+   [
+    "Excel",
+    1
+   ],
+   [
+    "SQL Server",
+    1
+   ],
+   [
+    "MySQL",
+    1
+   ],
+   [
+    "DB2",
+    1
+   ],
+   [
+    "Power BI",
+    1
+   ],
+   [
+    "Tableau",
+    1
+   ],
+   [
+    "Azure",
+    1
+   ],
+   [
+    "Spring Boot",
+    1
+   ],
+   [
+    "Big Data",
+    1
+   ],
+   [
+    "IoT",
+    1
+   ],
+   [
+    "Blockchain",
+    1
+   ],
+   [
+    "Odoo",
+    1
+   ],
+   [
+    "SAP",
+    1
+   ],
+   [
+    "Oracle",
+    1
+   ],
+   [
+    "Microsoft Dynamics",
+    1
+   ],
+   [
+    "NetSuite",
+    1
+   ],
+   [
+    "Waterfall",
+    1
+   ],
+   [
+    "UML",
+    1
+   ],
+   [
+    "GCP",
+    1
+   ],
+   [
+    "Docker",
+    1
+   ],
+   [
+    "Kubernetes",
+    1
+   ],
+   [
+    "Kafka",
+    1
+   ],
+   [
+    "Git",
+    1
+   ],
+   [
+    "Swagger",
+    1
+   ]
+  ],
+  "project_manager": [
+   [
+    "Agile/Scrum",
+    15
+   ],
+   [
+    "Java",
+    10
+   ],
+   [
+    "Jira",
+    10
+   ],
+   [
+    "AWS",
+    9
+   ],
+   [
+    "Azure",
+    6
+   ],
+   [
+    "JavaScript",
+    5
+   ],
+   [
+    "Docker",
+    4
+   ],
+   [
+    "C#",
+    4
+   ],
+   [
+    "HTML/CSS",
+    4
+   ],
+   [
+    "Confluence",
+    4
+   ],
+   [
+    "Git",
+    3
+   ],
+   [
+    "CI/CD",
+    3
+   ],
+   [
+    "Python",
+    3
+   ],
+   [
+    "GCP",
+    3
+   ],
+   [
+    "Google Workspace",
+    3
+   ],
+   [
+    "React",
+    3
+   ],
+   [
+    "SQL",
+    3
+   ],
+   [
+    "Waterfall",
+    3
+   ],
+   [
+    "MySQL",
+    3
+   ],
+   [
+    "PHP",
+    3
+   ],
+   [
+    "Windows Server",
+    2
+   ],
+   [
+    "Active Directory",
+    2
+   ],
+   [
+    "DevOps",
+    2
+   ],
+   [
+    "Google Meet",
+    2
+   ],
+   [
+    "Swift",
+    2
+   ],
+   [
+    "RESTful API",
+    2
+   ],
+   [
+    "SAP",
+    1
+   ],
+   [
+    "Oracle",
+    1
+   ],
+   [
+    "BI",
+    1
+   ],
+   [
+    "Linux",
+    1
+   ],
+   [
+    "Kubernetes",
+    1
+   ],
+   [
+    "AI/ML",
+    1
+   ],
+   [
+    "Spring",
+    1
+   ],
+   [
+    ".NET",
+    1
+   ],
+   [
+    "Azure DevOps",
+    1
+   ],
+   [
+    "Microsoft Teams",
+    1
+   ],
+   [
+    "CRM",
+    1
+   ],
+   [
+    "Firebase",
+    1
+   ],
+   [
+    "Google Analytics",
+    1
+   ],
+   [
+    "Kotlin",
+    1
+   ],
+   [
+    "C/C++",
+    1
+   ],
+   [
+    "SVN",
+    1
+   ],
+   [
+    "TeamCity",
+    1
+   ],
+   [
+    "Redmine",
+    1
+   ],
+   [
+    "WordPress",
+    1
+   ],
+   [
+    "Figma",
+    1
+   ],
+   [
+    "Miro",
+    1
+   ],
+   [
+    "Vue.js",
+    1
+   ],
+   [
+    "VPN",
+    1
+   ],
+   [
+    "Microservices",
+    1
+   ],
+   [
+    "Spring Boot",
+    1
+   ],
+   [
+    "Node.js",
+    1
+   ],
+   [
+    "Kafka",
+    1
+   ],
+   [
+    "RabbitMQ",
+    1
+   ],
+   [
+    "Elasticsearch",
+    1
+   ],
+   [
+    "Jenkins",
+    1
+   ],
+   [
+    "Ansible",
+    1
+   ],
+   [
+    "Apache Flink",
+    1
+   ],
+   [
+    "C",
+    1
+   ],
+   [
+    "C++",
+    1
+   ]
+  ],
+  "embedded": [
+   [
+    "C++",
+    45
+   ],
+   [
+    "C",
+    32
+   ],
+   [
+    "Git",
+    22
+   ],
+   [
+    "Linux",
+    18
+   ],
+   [
+    "Python",
+    15
+   ],
+   [
+    "RTOS",
+    7
+   ],
+   [
+    "Java",
+    6
+   ],
+   [
+    "Agile/Scrum",
+    6
+   ],
+   [
+    "C#",
+    6
+   ],
+   [
+    "AUTOSAR",
+    5
+   ],
+   [
+    "SPI",
+    5
+   ],
+   [
+    "I2C",
+    5
+   ],
+   [
+    "CI/CD",
+    5
+   ],
+   [
+    "Android",
+    5
+   ],
+   [
+    "Jira",
+    5
+   ],
+   [
+    "Yocto",
+    4
+   ],
+   [
+    "CAN",
+    4
+   ],
+   [
+    "Confluence",
+    4
+   ],
+   [
+    "Embedded Linux",
+    4
+   ],
+   [
+    "Microcontrollers",
+    3
+   ],
+   [
+    "UART",
+    3
+   ],
+   [
+    "GDB",
+    3
+   ],
+   [
+    "MFC",
+    3
+   ],
+   [
+    "Jenkins",
+    2
+   ],
+   [
+    "Ethernet",
+    2
+   ],
+   [
+    "TCP/IP",
+    2
+   ],
+   [
+    "WPF",
+    2
+   ],
+   [
+    "PLC",
+    2
+   ],
+   [
+    "HMI",
+    2
+   ],
+   [
+    "Mitsubishi",
+    2
+   ],
+   [
+    "RESTful API",
+    2
+   ],
+   [
+    "RS485",
+    2
+   ],
+   [
+    "RS232",
+    2
+   ],
+   [
+    "Modbus",
+    2
+   ],
+   [
+    "Embedded Systems",
+    1
+   ],
+   [
+    "IOT",
+    1
+   ],
+   [
+    "JavaScript",
+    1
+   ],
+   [
+    "Oracle",
+    1
+   ],
+   [
+    "Node.js",
+    1
+   ],
+   [
+    "OpenGL",
+    1
+   ],
+   [
+    "Unity",
+    1
+   ],
+   [
+    "Unreal Engine",
+    1
+   ],
+   [
+    "UML",
+    1
+   ],
+   [
+    "FFmpeg",
+    1
+   ],
+   [
+    "TensorFlow",
+    1
+   ],
+   [
+    "PyTorch",
+    1
+   ],
+   [
+    "HTML/CSS",
+    1
+   ],
+   [
+    "MVC",
+    1
+   ],
+   [
+    "MVVM",
+    1
+   ],
+   [
+    "HTTP",
+    1
+   ],
+   [
+    "Websocket",
+    1
+   ],
+   [
+    "Windows 11",
+    1
+   ],
+   [
+    "Ubuntu",
+    1
+   ],
+   [
+    "PostgreSQL",
+    1
+   ],
+   [
+    "SQL Server",
+    1
+   ],
+   [
+    "MySQL",
+    1
+   ],
+   [
+    "MQTT",
+    1
+   ],
+   [
+    "Omron",
+    1
+   ],
+   [
+    "LAN",
+    1
+   ],
+   [
+    "AWS",
+    1
+   ]
+  ],
+  "data_analyst": [
+   [
+    "Python",
+    6
+   ],
+   [
+    "SQL",
+    6
+   ],
+   [
+    "Tableau",
+    4
+   ],
+   [
+    "Power BI",
+    2
+   ],
+   [
+    "Excel",
+    2
+   ],
+   [
+    "AWS",
+    1
+   ],
+   [
+    "Azure",
+    1
+   ],
+   [
+    "GCP",
+    1
+   ],
+   [
+    "Java",
+    1
+   ],
+   [
+    "MongoDB",
+    1
+   ],
+   [
+    "RESTful API",
+    1
+   ],
+   [
+    "Agile/Scrum",
+    1
+   ],
+   [
+    "Git",
+    1
+   ],
+   [
+    "Jira",
+    1
+   ],
+   [
+    "PostgreSQL",
+    1
+   ],
+   [
+    "Pandas",
+    1
+   ],
+   [
+    "Oracle",
+    1
+   ],
+   [
+    "Hadoop",
+    1
+   ],
+   [
+    "Spark",
+    1
+   ],
+   [
+    "SQL Server",
+    1
+   ]
+  ],
+  "blockchain": [
+   [
+    "JavaScript",
+    7
+   ],
+   [
+    "Solidity",
+    6
+   ],
+   [
+    "Go",
+    5
+   ],
+   [
+    "Rust",
+    5
+   ],
+   [
+    "Node.js",
+    4
+   ],
+   [
+    "React",
+    4
+   ],
+   [
+    "Python",
+    4
+   ],
+   [
+    "Docker",
+    3
+   ],
+   [
+    "Ethereum",
+    3
+   ],
+   [
+    "Web3",
+    3
+   ],
+   [
+    "TypeScript",
+    2
+   ],
+   [
+    "Blockchain",
+    2
+   ],
+   [
+    "Java",
+    2
+   ],
+   [
+    "Ethers.js",
+    2
+   ],
+   [
+    "MySQL",
+    1
+   ],
+   [
+    "Microservices",
+    1
+   ],
+   [
+    "Vue.js",
+    1
+   ],
+   [
+    "Angular",
+    1
+   ],
+   [
+    "Kotlin",
+    1
+   ],
+   [
+    "C",
+    1
+   ],
+   [
+    "C++",
+    1
+   ],
+   [
+    "Dart",
+    1
+   ],
+   [
+    "Swift",
+    1
+   ],
+   [
+    "Objective-C",
+    1
+   ],
+   [
+    "Xcode",
+    1
+   ],
+   [
+    "Swift Package Manager",
+    1
+   ],
+   [
+    "Android Studio",
+    1
+   ],
+   [
+    "React Native",
+    1
+   ],
+   [
+    "Flutter",
+    1
+   ],
+   [
+    "RESTful API",
+    1
+   ],
+   [
+    "Kubernetes",
+    1
+   ]
+  ]
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "split": "test",
+ "text": "profile",
+ "results": {
+  "bm25": {
+   "jd2cv": {
+    "ndcg@10": 0.6862,
+    "mrr@10": 0.7421,
+    "recall@20": 0.892,
+    "recall@50": 0.9409
+   },
+   "cv2jd": {
+    "ndcg@10": 0.5809,
+    "mrr@10": 0.3026,
+    "recall@20": 0.7877,
+    "recall@50": 0.9345
+   },
+   "sec": 0.4
+  },
+  "skill": {
+   "jd2cv": {
+    "ndcg@10": 0.8562,
+    "mrr@10": 0.9489,
+    "recall@20": 0.99,
+    "recall@50": 0.9989
+   },
+   "cv2jd": {
+    "ndcg@10": 0.8131,
+    "mrr@10": 0.4184,
+    "recall@20": 0.9861,
+    "recall@50": 1.0
+   },
+   "sec": 0.0
+  },
+  "e5-base": {
+   "jd2cv": {
+    "ndcg@10": 0.63,
+    "mrr@10": 0.6645,
+    "recall@20": 0.8713,
+    "recall@50": 0.9566
+   },
+   "cv2jd": {
+    "ndcg@10": 0.6358,
+    "mrr@10": 0.3205,
+    "recall@20": 0.8778,
+    "recall@50": 0.9604
+   },
+   "sec": 27.5
+  },
+  "e5-base+hybrid": {
+   "jd2cv": {
+    "ndcg@10": 0.9048,
+    "mrr@10": 0.9915,
+    "recall@20": 0.9917,
+    "recall@50": 0.9985
+   },
+   "cv2jd": {
+    "ndcg@10": 0.852,
+    "mrr@10": 0.4425,
+    "recall@20": 0.9776,
+    "recall@50": 0.9965
+   },
+   "sec": 0.0
+  },
+  "models/cvjd-e5-base-profile": {
+   "jd2cv": {
+    "ndcg@10": 0.8379,
+    "mrr@10": 0.9103,
+    "recall@20": 0.965,
+    "recall@50": 0.9983
+   },
+   "cv2jd": {
+    "ndcg@10": 0.8399,
+    "mrr@10": 0.4227,
+    "recall@20": 0.9554,
+    "recall@50": 0.9884
+   },
+   "sec": 8.4
+  },
+  "models/cvjd-e5-base-profile+hybrid": {
+   "jd2cv": {
+    "ndcg@10": 0.888,
+    "mrr@10": 0.9518,
+    "recall@20": 0.9888,
+    "recall@50": 0.9986
+   },
+   "cv2jd": {
+    "ndcg@10": 0.8697,
+    "mrr@10": 0.4353,
+    "recall@20": 0.9774,
+    "recall@50": 0.9982
+   },
+   "sec": 0.0
+  },
+  "models/cvjd-e5-base-profile-clean": {
+   "jd2cv": {
+    "ndcg@10": 0.8418,
+    "mrr@10": 0.9061,
+    "recall@20": 0.9729,
+    "recall@50": 0.9988
+   },
+   "cv2jd": {
+    "ndcg@10": 0.845,
+    "mrr@10": 0.4252,
+    "recall@20": 0.9584,
+    "recall@50": 0.9939
+   },
+   "sec": 8.2
+  },
+  "models/cvjd-e5-base-profile-clean+hybrid": {
+   "jd2cv": {
+    "ndcg@10": 0.8913,
+    "mrr@10": 0.9543,
+    "recall@20": 0.9904,
+    "recall@50": 0.9988
+   },
+   "cv2jd": {
+    "ndcg@10": 0.876,
+    "mrr@10": 0.4361,
+    "recall@20": 0.9758,
+    "recall@50": 0.9976
+   },
+   "sec": 0.0
+  }
+ }
+}

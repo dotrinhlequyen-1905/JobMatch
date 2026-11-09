@@ -1,0 +1,65 @@
+{
+ "model": "google/gemma-4-31b-it:free",
+ "gen_raw": null,
+ "gen_info": {
+  "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_b"
+ },
+ "review_raw": null,
+ "review_info": {
+  "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-4-31b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Google AI Studio\",\"is_b"
+ },
+ "gen_check": [
+  {
+   "id": "fit_vi",
+   "ok": false
+  },
+  {
+   "id": "senior_gap_en",
+   "ok": false
+  }
+ ],
+ "review_check": [
+  {
+   "id": "case1",
+   "bucket": "0diff",
+   "rule": 0,
+   "llm": null,
+   "reason": ""
+  },
+  {
+   "id": "case2",
+   "bucket": "1",
+   "rule": 1,
+   "llm": null,
+   "reason": ""
+  },
+  {
+   "id": "case3",
+   "bucket": "1",
+   "rule": 1,
+   "llm": null,
+   "reason": ""
+  },
+  {
+   "id": "case4",
+   "bucket": "2",
+   "rule": 2,
+   "llm": null,
+   "reason": ""
+  },
+  {
+   "id": "case5",
+   "bucket": "2",
+   "rule": 2,
+   "llm": null,
+   "reason": ""
+  },
+  {
+   "id": "case6",
+   "bucket": "0same",
+   "rule": 0,
+   "llm": null,
+   "reason": ""
+  }
+ ]
+}

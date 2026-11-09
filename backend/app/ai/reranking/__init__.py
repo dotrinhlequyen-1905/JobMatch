@@ -1,1 +1,0 @@
-﻿\"\"\"Cross-encoder re-ranking.\"\"\"
