@@ -117,8 +117,8 @@ Mô hình được huấn luyện và đánh giá trên **1.978 tin tuyển dụ
 Cần cài [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
 ```bash
-git clone https://github.com/dotrinhlequyen-1905/AI-Recruitment-Platform.git
-cd AI-Recruitment-Platform
+git clone https://github.com/dotrinhlequyen-1905/JobMatch.git
+cd JobMatch
 cp .env.example .env
 docker compose up -d --build
 docker compose exec backend python scripts/seed.py   # nạp dữ liệu mẫu
@@ -135,6 +135,24 @@ Mở trình duyệt tại **http://localhost** và đăng nhập bằng một tr
 > **Lưu ý:** mô hình AI đã tinh chỉnh không kèm trong repo vì dung lượng lớn. Để chạy thử nhanh, trong file `.env` đặt `EMBED_MODEL=intfloat/multilingual-e5-base` (tự tải mô hình gốc) hoặc `EMBED_MODEL=hashing` (không cần tải mô hình). Ở chế độ demo, trang thanh toán có nút giả lập chuyển khoản nên không cần chuyển tiền thật.
 
 Hướng dẫn chi tiết hơn (chạy không dùng Docker, cấu hình thanh toán, kiểm thử) nằm trong [docs/deployment.md](docs/deployment.md).
+
+## Testing
+
+**Backend (pytest):** mặc định dùng SQLite tạm, không cần Docker.
+
+```bash
+pip install -e "backend[dev]"
+python -m pytest backend/tests -q
+```
+
+**Giao diện end-to-end (Playwright):** cần backend chạy ở `:8000`, frontend dev server ở `:5173` (`cd frontend && npm run dev`) và database đã nạp dữ liệu mẫu.
+
+```bash
+pip install playwright
+playwright install chromium
+python e2e/smoke_ui.py      # đi hết luồng chính của 3 vai trò, ảnh chụp lưu ở e2e/screenshots/
+python e2e/mobile_check.py  # chụp các trang chính ở khổ điện thoại (390x844), báo trang bị tràn ngang
+```
 
 ## Tài liệu kỹ thuật
 

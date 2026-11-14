@@ -1,9 +1,13 @@
+"""Tầng truy vấn DB cho tin tuyển dụng: đọc/ghi Job, thống kê cho HR và các bộ lọc tìm kiếm."""
+
 from sqlalchemy import Text, cast, func, or_, select, update
 from sqlalchemy.orm import joinedload
 
 from ..core.clock import now
 from ..core.filters import job_is_open
 from ..models import CV, Application, Company, InterviewSlot, Job, Notification, User
+
+# ---------- Đọc / ghi cơ bản ----------
 
 
 def get(db, job_id):
@@ -19,6 +23,7 @@ def list_owned(db, c):
 
 
 def application_counts(db, c):
+    # Mỗi tin của công ty: tổng số hồ sơ + điểm phù hợp trung bình (cho HR dashboard).
     return db.execute(
         select(Application.job_id, func.count(), func.avg(Application.match_score))
         .join(Job)
@@ -33,11 +38,15 @@ def count_posts(db, c):
 
 
 def increment_views(db, job):
+    # Tăng lượt xem ngay trong DB (UPDATE nguyên tử) để không mất đếm khi nhiều request song song.
     return db.execute(update(Job).where(Job.id == job.id).values(view_count=Job.view_count + 1))
 
 
 def add(db, job):
     return db.add(job)
+
+
+# ---------- Mời ứng viên (HR gửi lời mời ứng tuyển) ----------
 
 
 def find_candidate(db, body):
@@ -49,6 +58,7 @@ def has_application(db, cand, job):
 
 
 def find_invitation(db, cand, link):
+    # Lời mời lưu dạng Notification type=INVITE; kiểm tra để không mời trùng.
     return db.scalar(
         select(Notification.id).where(
             Notification.user_id == cand.id, Notification.type == "INVITE", Notification.link == link
@@ -64,6 +74,9 @@ def add_invitation(db, cand, job, link, note):
     )
 
 
+# ---------- Thống kê cho HR dashboard ----------
+
+
 def application_status_counts(db, c):
     return db.execute(
         select(Application.status, func.count()).join(Job).where(Job.company_id == c.id).group_by(Application.status)
@@ -75,6 +88,7 @@ def job_status_counts(db, c):
 
 
 def upcoming_slots(db, user):
+    # 10 buổi phỏng vấn đã đặt sắp diễn ra của HR này.
     return db.scalars(
         select(InterviewSlot)
         .where(InterviewSlot.hr_id == user.id, InterviewSlot.status == "BOOKED", InterviewSlot.start_at > now())
@@ -93,7 +107,12 @@ def cv_pool_count(db):
     return db.scalar(select(func.count()).select_from(CV))
 
 
+# ---------- Bộ lọc tìm kiếm tin ----------
+# Mỗi filter_* nhận câu select và nối thêm điều kiện WHERE, cho phép ghép nhiều bộ lọc tùy ý.
+
+
 def open_jobs():
+    # Câu truy vấn gốc: chỉ tin đã đăng, còn hạn, của công ty đã duyệt.
     return select(Job).join(Company).where(job_is_open())
 
 
@@ -118,12 +137,14 @@ def filter_city(city, stmt):
 
 def filter_cities(cities, stmt):
     selected = {city.strip() for city in cities if city.strip()}
+    # "Remote" khớp luôn các cách ghi tiếng Việt tương đương trong dữ liệu.
     if "Remote" in selected:
         selected.update(("Làm việc từ xa", "Làm từ xa"))
     return stmt.where(Job.city.in_(sorted(selected))) if selected else stmt
 
 
 def filter_salary_range(salary_range, stmt):
+    # Khoảng lương của tin chỉ cần GIAO với bucket người dùng chọn là khớp.
     # UI buckets are [lower, upper); a salary interval may overlap several buckets.
     lower, upper = {
         "under_10": (None, 10_000_000),
@@ -161,6 +182,7 @@ def filter_company(company_id, stmt):
 
 
 def filter_skill(skill, stmt):
+    # skills lưu dạng JSON nên tìm theo chuỗi có ngoặc kép để khớp nguyên kỹ năng.
     return stmt.where(cast(Job.skills, Text).ilike(f'%"{skill}"%'))
 
 
@@ -169,6 +191,7 @@ def count(db, stmt):
 
 
 def list_page(db, page, size, stmt, *, sort="newest"):
+    # Phân trang + sắp xếp; thêm Job.id để thứ tự ổn định khi created_at trùng nhau.
     ordering = {
         "newest": (Job.created_at.desc(), Job.id.desc()),
         "oldest": (Job.created_at.asc(), Job.id.asc()),
